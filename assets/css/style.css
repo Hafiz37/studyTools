@@ -146,13 +146,13 @@ a{
 	}
 
 	
-	#hero .logIn h3{
+	/* #hero .logIn h3{
 		display: inline-block;
 		margin:5px 16px 0 0;
 		font-size: 24px;
 		font-weight: bold;
 		color: white;
-	}
+	} */
 
 	#hero .logIn  {
 		display: flex;
