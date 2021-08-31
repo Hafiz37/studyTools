@@ -1159,12 +1159,95 @@ transition: all 0.5s;
 }
 
 
-
-
-
 /* selesai cta */
 
 
+
+/*------------------------------------------------------------------ 
+praktek
+--------------------------------------------------------------- */
+
+
+
+#praktek{
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  background-color: #ecf2f8;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 981px;
+  box-sizing: border-box;
+}
+
+
+#praktek .accordion-1{
+  /* background-color: #04B100; */
+  height: 770px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  overflow: auto;
+  align-items: center;
+}
+
+#praktek .accordion-1 .belajarYuk{
+  height: 28px;
+  width: 100%;
+  background-color: #7827E6;
+  border-radius: 20px 20px 0 0;
+}
+
+#praktek .accordion-1 .accordion{
+  width: 100%;
+  margin-top: -8px;
+}
+
+#praktek .bg-btnKirim {
+  height: 60px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+#praktek .bg-btnKirim .buttonKirim{
+  width: 292px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #7827E6;
+  box-sizing: border-box;
+  bottom: -6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.219);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+#praktek .keForum{
+  width: 848px;
+  height: 117px;
+  background-color: #DCC7F8;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+
+#praktek .keForum p{
+  width: 400px;
+  position: relative;
+  bottom: -8px;
+}
+
+
+
+#praktek .keForum .btn{
+  width: 142px;
+  height: 36px;
+  position: relative;
+  bottom: -20px;
+}
+
+
+
+/*------------------------------------------------------------------ 
+selesai praktek
+--------------------------------------------------------------- */
 
 
 
