@@ -1,18 +1,3 @@
-// navbar
-
-
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-});
-
-
-// selesai navbar
-
-
-
 // halaman login
 
 const inputs = document.querySelectorAll(".input");
@@ -37,3 +22,19 @@ inputs.forEach(input => {
 });
 // selesai halaman login
 
+
+
+
+
+// navbar
+
+
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function(){
+    nav.classList.toggle('slide');
+});
+
+
+// selesai navbar
