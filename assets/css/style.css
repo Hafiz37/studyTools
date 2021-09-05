@@ -741,39 +741,15 @@ nav .profilUser a .namaUser{
 
 
 
-/* footer */
-#footer{
+/* Footer */
+footer{
   background-color:rgb(1,47,124) ;
-  margin-top: 124px;
+  margin-top: 250px;
 }
-
-#footer .logo{
-  margin: 56px 0 28px 0;
+footer li{
+  margin-bottom: .5rem !important;
 }
-
-#footer p,#footer h2,#footer h3,#footer a{
-  color: white;
-}
-
-#footer ul{
-  list-style: none;
-  margin: 12px 0 0 -30px ;
-}
-
-#footer li{
-  margin-bottom: 15px;
-}
-
-#footer h2{
-  margin-top: 56px;
-}
-
-#footer svg{
-  margin-top: -150px;
-}
-/* selesai footer */
-
-
+/*selesai footer*/
 
 
 
@@ -1441,4 +1417,65 @@ margin-top: -250px;
 -------------------------------------------------------------------------------------------------*/
 
 
+
+
+/*----------------------------------------------------------------------------------------------
+    memilih device
+-------------------------------------------------------------------------------------------------*/
+.memilihDevice img{
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}
+
+.memilihDevice h1.button {
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+  display: inline-block;
+  /* float: right; */
+}
+
+.memilihDevice h1.poin {
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 15px; 
+  background-color: #a28383; 
+}
+
+.memilihDevice .bodyPoin{
+  bottom: 20px;
+    position: relative;
+}
+
+.memilihDevice .card-text{
+  height: 64%;
+}
+
+.memilihDevice .device {
+  background-color:#ECF2F8;
+  width: 1020px;
+  height: 375px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow:  0px 0px 9px 1px rgba(0, 0, 0, 0.25);;
+}
+
+.macamDevice{
+  width: 1088px;
+  height: 1197px;
+  margin: 0 auto;
+  border:  1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: auto;
+}
+  
+.memilihDevice .card-body h2 {
+  margin-top: 50px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------
+    selessai memilih device
+    --------------------------------------------------------------------------------------- */
 
