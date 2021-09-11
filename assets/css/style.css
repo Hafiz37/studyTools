@@ -1094,6 +1094,16 @@ color: rgb(255, 255, 255);
   margin: -70px auto 0 auto;
 }
 
+@media (max-width:1200px) {
+  #ourTeam{
+    height: auto;
+  }
+
+  #ourTeam .perOrang{
+    margin-top: 120px;
+  }
+}
+
 /* selesai our team */
 
 
@@ -1175,6 +1185,19 @@ transition: all 0.5s;
   color: #fff;
   white-space: nowrap;
   transition: 0.4s;
+}
+
+@media (max-width:992px){
+  #cta{
+    height: auto;
+  }
+
+  #cta .konten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
@@ -1588,3 +1611,113 @@ margin-top: -250px;
 /* -----------------------------------------------------------------------------------------------
   selsai halaman forum detail pertanyaan
   --------------------------------------------------------------------------------------------------*/
+
+  
+  
+  /* -----------------------------------------------------------------------------------------------
+    menjawab pertanyaan di forum
+    --------------------------------------------------------------------------------------------------*/
+  
+
+.textareaST{
+  margin-top: 4%;
+  margin-left: 30%;
+  padding: 10px;
+  width: 310px;
+  border: 1px solid #ededed;
+    margin-bottom: 500px;
+
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+}
+.textareaST form{
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+}
+.textareaST textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  height: 384px;
+}
+
+.textareaST label.labels{
+  color: #151D36;
+}
+
+.textareaST .textarea_style{
+  margin-top: 5px;
+  width: auto;
+  height: auto;
+  border: 1px solid #229CFF;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #D8E8F3;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.textareaST .textarea_style:hover{
+  -moz-box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  -webkit-box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  border: 1px solid #229CFF;
+}
+.textareaST .textarea_style:focus{
+  -moz-box-shadow: 0px 0px 5px 1px #EBF6FF;
+  -webkit-box-shadow: 0px 0px 5px 1px  #EBF6FF;
+  box-shadow: 0px 0px 5px 1px  #EBF6FF;
+  border: 1px solid #229CFF;
+}
+
+.textareaST textarea{
+    border-radius: 30px;
+    width: 98%;
+    padding: 12px 0;
+    background-color: transparent;
+}
+
+.textareaST textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+
+.textareaST textarea::-webkit-scrollbar-thumb {
+  background-color: #DCC7F8;
+    border: 0.5px solid #7827E6;
+}
+
+.textareaST span.textarea_count{
+  margin-top: 2px;
+  float: right;
+  font-size: 10px;
+  color:#EC0F0F;
+}
+
+.textareaST button{
+    width: 276px;
+    height: 52px;
+    background-color:#7827E6;
+  font-size: 1.25rem;
+}
+
+@media (max-width:767px){
+  .textareaST textarea{
+    height: 260px;
+  }
+
+  .textareaST button{
+    width: 172px;
+    height: 43px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+  /* -----------------------------------------------------------------------------------------------
+    selesai  menjawab pertanyaan di forum
+    --------------------------------------------------------------------------------------------------*/
+  
