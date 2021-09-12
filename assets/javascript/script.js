@@ -100,13 +100,17 @@ menuToggle.addEventListener('click', function(){
 
 function charCount(){
     let element = document.getElementById('textarea').value.length;
+    let btn = document.getElementById('btnKirim')
+
     document.getElementById('textarea_count').innerHTML=element + "/10 (Min Character 10).";
 	
 	if(element >= 10){
 		document.getElementById('textarea_count').innerHTML = element + " complete";
 		document.getElementById('textarea_count').style.color = 'green';
+        btn.disabled = false
 	} else{
 		document.getElementById('textarea_count').style.color = 'red';
+        btn.disabled = true
 	}
 
 }
