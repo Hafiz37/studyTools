@@ -63,107 +63,25 @@ a{
 
 
 
-#form-pendaftaran img.logo{
-	width: 181px;
-	margin: 40px 0;
+
+#detailPertanyaan{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* padding: 20px 20px; */
+    border-radius: 15px;
+    height: auto;
 }
 
-
-
-.profile-pic-div{
-    height: 200px;
-    width: 200px;
-	margin: 20px auto;
-    transform: translate(-50%);
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid grey;
-	margin-left: 50%;
+#detailPertanyaan img{
+    width: 72px;
+    height: 72px;
+    border: 1px solid black;
 }
 
-.profile-pic-div #photo{
-    height: 100%;
-    width: 100%;
+#forum-detai-pertanyaan #detailPertanyaan button{
+    width: 316px;
+    height: 44px;
+    background-color:#7827E6;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-.profile-pic-div #file{
-    display: none;
-}
-
-.profile-pic-div #uploadBtn{
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: wheat;
-    line-height: 30px;
-    font-family: sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/* combobox tgl lahir */
-.login-content input[type="date"]{
-    background-color: transparent;
-    padding: 15px;
-    /* color: #ffffff; */
-	color: #151D36;
-    font-size: 18px;
-    border: 0.5px solid #7827E6;
-    outline: none;
-    border-radius: 5px;
-	width: 360px;
-	margin: 20px 0;
-}
-.login-content ::-webkit-calendar-picker-indicator{
-    background-color: #DCC7F8;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-/* kelamin */
-.login-content input[type="radio"]{
-    -webkit-appearance: none;
-}
-
-.login-content label{
-	height: 100px;
-	width: 100px;
-	border: 6px solid #DCC7F8;
-	margin: auto;
-	border-radius: 10px;
-	position: relative;
-	color: #DCC7F8;
-	transition: 0.5s;
- }
-
- .login-content .fa {
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%); 
-}
-
-.login-content label>span {
-	font-weight: bold;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 80%);
-}
-
-.login-content input[type="radio"]:checked + label {
-	background-color: #DCC7F8;
-	color: #151D36;
-	box-shadow: 0 15px 45px rgb(24,249,141,0.2);
-	width: 100px;
-	height: 100px;
-}
