@@ -1,0 +1,1411 @@
+/* <==== CSS Reset ====> */
+html, body, div, span, applet, object, iframe,
+h1, h3, h4, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family:  Quicksand,Arial, Helvetica, sans-serif !important;
+  overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+/* <==== selesai CSS Reset ====> */
+
+
+
+/* <==== Hero ====> */
+#hero {
+	width: 100%;
+	height: 680px;
+	background: linear-gradient(292.45deg, #7827e6 33.61%, rgba(220, 199, 248, 0.96) 105.2%);
+}
+
+#hero .h1h2{
+	margin-top: 50px;
+}
+
+#hero .logo{
+	position: absolute;
+    top: 32px;
+}
+
+#hero h1 {
+	margin: -120px 0 0 0;
+	font-size: 56px;
+	font-weight:bold;
+	line-height: 70px;
+	color: #fff;
+	width: 600px;
+}
+  
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 45px;
+	margin-top: 60px;
+	font-size: 24px;
+}
+
+/* tombol get started dan sign up */
+#hero .btn-get-started, #hero .btn-sign-up {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px 28px ;
+	border-radius: 50px;
+	transition: 0.5s;
+	color: #151d36;
+	background: #fff;
+}
+  
+/* membedakan button signup */
+#hero .btn-sign-up{
+	padding: 10px 40px ;
+	color: #fff;
+	background:none;
+	border: 2px solid #151d36;
+}
+  
+/* button get started dan signup saat hoover */
+#hero .btn-get-started:hover, #hero .btn-sign-up:hover {
+	background: #151d36;
+	color: #fff;
+}
+  
+#hero .signUp{
+	padding-left: 42px;
+}
+
+/* tombol login,signupdan get started saat aktif */
+#hero a:focus {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 20px;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #151d36;
+	color: #fff;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+	
+/* #hero .logIn h3{
+	display: inline-block;
+	margin:5px 16px 0 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+} */
+
+#hero .logIn  {
+	display: flex;
+	float: right;
+	margin-top: -126px;
+}
+	
+/* tombol login saat aktif */
+#hero .logIn a.button:focus{
+		display: inline-block;
+}
+	
+/* membuat animasi */
+#hero .animasi {
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+	0% {
+		transform: translateY(10px);
+	
+  }
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes up-down {
+	0% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+/* responsive hero */
+@media (max-width: 991px) {
+	#hero {
+	  height: 100vh;
+	  text-align: center;
+	}
+	#hero .animated {
+	  -webkit-animation: none;
+	  animation: none;
+	}
+	#hero .hero-img {
+	  text-align: center;
+	}
+	#hero .hero-img img {
+	  width: 50%;
+	}
+}  
+  
+@media (max-width: 700px) {
+  #hero{
+	  width: 100%;
+  }
+	#hero h1 {
+	  font-size: 28px;
+	  line-height: 36px;
+	}
+	#hero h2 {
+	  font-size: 18px;
+	  line-height: 24px;
+	  margin-bottom: 30px;
+	}
+	#hero .hero-img img {
+	  width: 70%;
+	}
+}
+  
+@media (max-width: 575px) {
+	#hero .hero-img img {
+	  width: 80%;
+	}
+	#hero .btn-get-started {
+	  font-size: 16px;
+	  padding: 10px 24px 11px 24px;
+	}
+}
+/* <==== selesai Hero ====> */  
+
+/* <==== Halaman Login ====> */
+.wave-login{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.containerLogIn{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap :7rem;
+  padding: 0 2rem;
+}
+
+.containerLogIn .img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.containerLogIn .login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.containerLogIn .img img{
+	width: 500px;
+}
+
+.containerLogIn form{
+	width: 360px;
+}
+
+.containerLogIn .login-content img{
+    height: 100px;
+}
+
+.containerLogIn .login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.containerLogIn .login-content .input-div{
+	position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.containerLogIn .i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerLogIn .i i{
+	transition: .3s;
+}
+
+.containerLogIn .input-div > div{
+  position: relative;
+	height: 45px;
+}
+
+.containerLogIn .input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.containerLogIn .input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+  background-color: #7827E6;
+	transition: .4s;
+}
+
+.containerLogIn .input-div:before{
+	right: 50%;
+}
+
+.containerLogIn .input-div:after{
+	left: 50%;
+}
+
+.containerLogIn .input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.containerLogIn .input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.containerLogIn .input-div.focus > .i > i{
+	color: #7827E6;
+}
+
+.containerLogIn .input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.containerLogIn .input-div.pass{
+	margin-bottom: 4px;
+}
+
+.containerLogIn a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+.containerLogIn a:hover{
+	color: #38d39f;
+}
+
+.containerLogIn .btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	/* background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f); */
+  background-color: #7827E6;
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.containerLogIn .btn:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.containerLogIn form{
+		width: 290px;
+	}
+	.containerLogIn .login-content h2{
+        font-size: 1.5rem;
+        margin: 8px 0;
+	}
+	.containerLogIn .img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.containerLogIn{
+		grid-template-columns: 1fr;
+	}
+	.containerLogIn .img{
+		display: none;
+	}
+	.containerLogIn .wave{
+		display: none;
+	}
+	.containerLogIn .login-content{
+		justify-content: center;
+	}  
+  img.wave-login{
+    display: none;
+  }
+}
+/* <==== selesai Halaman Login ====> */
+
+/* <==== Header & Footer ====> */
+nav{
+  background-color: rgb(1,47,124);
+}
+
+nav .navbar-brand{
+  width: 136px;
+  margin-top: -17px;
+  padding: 18px 14px 8px 14px;
+  border-radius: 0 0 15px 15px;
+  background-color: white;
+  left: 4%;
+  top:8px;
+}
+
+footer{
+  background-color:rgb(1,47,124) ;
+  margin-top: 250px;
+}
+
+footer li{
+  margin-bottom: .5rem !important;
+}
+/* <==== selesai Header & Footer ====> */
+
+/* <==== Halaman Home ====> */
+/* carousel */
+#carouselExampleControls{
+  width: 100%;
+}
+/* selesai carousel */
+
+/* why us */
+#whyUs{
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+#whyUs h3.baris ,#whyUs h2{
+  color: #555B63;
+}
+
+#whyUs .baris3 i.icon{
+  box-sizing: content-box;
+  color: black;
+  background-color: #9B8BDE;
+}
+/* selesai why us */
+
+/* mulai belajar */
+#mulaiBelajarHalUtama{
+  background-color: #EFF2F6;
+  width: 100%;
+  height: 630px;
+}
+/* selesai mulai belajar */
+
+/* forum */
+#forumDiHalUtama{
+  height: 630px;
+  width: 100%;
+}
+/* selesai forum */
+
+/*  materi dan forum */
+#mulaiBelajarHalUtama p ,#forumDiHalUtama p{
+  margin: 144px 0 24px 0;
+}
+
+#forumDiHalUtama a , #mulaiBelajarHalUtama a{
+  background-color: #7827E6;
+  color:white;
+  display: grid;
+  width: 220px;
+  height: 46px;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width:993px){
+  #forumDiHalUtama img , #mulaiBelajarHalUtama img{
+    display: none;
+  }
+  #mulaiBelajarHalUtama p ,#forumDiHalUtama p{
+    margin: 144px 0 24px 0;
+    text-align: center;
+  }
+  #forumDiHalUtama a , #mulaiBelajarHalUtama a{
+    margin: 0 auto;
+  }
+}
+/* selsai  materi dan forum */
+
+/* leaderboard */
+#leaderboard{
+  width: 100%;
+  height: 744px;
+  background-color: #EFF2F6;
+}
+
+#leaderboard .container p.paragraph{
+  position: relative;
+  top: 84px;
+  line-height: 30px;
+  color: #151d36;
+}
+
+.no1-10{
+  display: flex;
+  flex-direction: column;
+}
+
+#leaderboard .tingkat1{
+  width: 443px;
+  height: 684px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+#leaderboard .tingkat1 h2.judul{
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  top: 16px;
+  margin-bottom: 20px;
+}
+
+#leaderboard .no1-3{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#leaderboard .tingkat1 .no1-10 h2{
+  font-weight: normal;
+  font-size: 42px;
+}
+
+#leaderboard .tingkat1 .no1-10 h3{
+  font-size: 24px;
+font-weight: bold;
+margin-bottom: 4px;
+}
+
+#leaderboard .no1,#leaderboard .no2,#leaderboard .no3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no1{
+  position: relative;
+  top: 30px;
+}
+
+#leaderboard .tingkat1 .no1-10 .no1-3 h4{
+  width: 90px;
+  background-color: #F3E033;
+  padding: 1px 12px 1px 12px;
+  font-size: 14px;
+}
+
+#leaderboard .no1-3 .no1{
+  order: 2;
+}
+
+#leaderboard .no1-3 .no2{
+  order: 1;
+}
+
+#leaderboard .no1-3 .no3{
+  order: 3;
+}
+
+#leaderboard .tingkat2-ats{
+  background-color: #9B8BDE;
+  width: 363px;
+  height: 130px;
+  margin: 50px auto 0 auto;
+  border-radius: 100% 100% 0 0;
+}
+
+#leaderboard .tingkat2-bwh{
+  background-color: #9B8BDE;
+  width: 363px;
+  height: 300px;
+  /* display: inline-block; */
+  margin: -60px auto 0 auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#leaderboard .tingkat2-bwh .no4-10{
+  background-color: #E0F2FF;
+  width: 313px;
+  height: 31px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+#leaderboard .tingkat2-bwh .no4-10 img{
+  margin: 0 8px;
+}
+
+#leaderboard .tingkat2-bwh .no4-10 h4{
+  font-size: 20px;
+}
+
+#leaderboard .tingkat2-bwh .no4-10 h4.poin{
+  position: relative;
+  background-color: #F3E033;
+  padding: 1px 12px 1px 12px;
+  font-size: 14px;
+  margin: 6px;
+}
+
+@media (max-width:993px){
+  #leaderboard img.ilustrasi{
+    display: none;
+  }
+  #leaderboard .tingkat1{
+    margin: 16px auto;
+  }
+  #leaderboard .container p.paragraph{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  #leaderboard{
+    height: auto;
+
+  }
+}
+/* selesai leaderboard */
+
+/* testimonial */
+#carouselTestimonial{
+  background: linear-gradient(180deg, #265188 55%, white 45%);
+  border-radius: 25px;
+}
+
+#carouselTestimonial .carousel-control-next,#carouselTestimonial .carousel-control-prev{
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+/* selesai testimonial */
+
+/* our team */
+#ourTeam{
+  width: 100%;
+  height: 645px;
+  background-color:#EFF2F6 ;
+}
+
+#ourTeam h1{
+  margin: 130px 0 100px 0;
+}
+
+#ourTeam .cardd{
+  width: 350px;
+  height: 185px;
+  border-radius: 10px;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+#ourTeam img{
+  width: 152px;
+  height: 152px;
+  border: 8px solid white;
+  margin: -70px auto 0 auto;
+}
+
+@media (max-width:1200px) {
+  #ourTeam{
+    height: auto;
+  }
+  #ourTeam .perOrang{
+    margin-top: 120px;
+  }
+}
+/* selesai our team */
+
+/* cta */
+.get-started{
+  background-color: #DCC7F8;
+  border: none;
+  border-radius: 25px;
+}
+
+.get-started a.mulai-belajar{
+  background-color: #7827E6;
+  color:white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.get-started a.forum{
+  border: 2px solid black;
+  color:#151d36;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.get-started .mulai-belajar:hover{
+  background: #f3f3f3;
+  color: #151d36;
+  transition: all 0.5s;
+}
+
+.get-started .forum:hover{
+  background: #151d36;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/* tombol login,signupdan get started saat aktif */
+.get-started a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #151d36;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.4s;
+}
+/* selesai cta */
+
+
+
+
+/*------------------------------------------------------------------ 
+praktek
+--------------------------------------------------------------- */
+
+
+
+#praktek{
+	border: 0.5px solid rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	background-color: #ecf2f8;
+	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.25);
+	width: 95%;
+	height: 981px;
+	box-sizing: border-box;
+  }
+  
+  
+  #praktek .accordion-1{
+	/* background-color: #04B100; */
+	height: 770px;
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+	overflow: auto;
+	align-items: center;
+  }
+  
+  #praktek .accordion-1 .belajarYuk{
+	height: 28px;
+	width: 100%;
+	background-color: #7827E6;
+	border-radius: 20px 20px 0 0;
+  }
+  
+  #praktek .accordion-1 .accordion{
+	width: 100%;
+	margin-top: -8px;
+  }
+  
+  #praktek .bg-btnKirim {
+	height: 60px;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
+  }
+  
+  #praktek .bg-btnKirim .buttonKirim{
+	width: 292px;
+	height: 40px;
+	margin-top: 10px;
+	background-color: #7827E6;
+	box-sizing: border-box;
+	bottom: -6px;
+	border: 0.5px solid rgba(0, 0, 0, 0.219);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+  }
+
+
+  #praktek .modul{
+	  width: 848px;
+	  height: 699px;
+	  border: 2px solid black;
+	  position: relative;
+	  left: -15px;
+	  border-radius: 20px;
+	  background-color: #fff;
+  }
+
+  #praktek .modul .modul2{
+	  width: 818px;
+	  height: 456px;
+	  border-radius: 15px;
+	  border: 2px solid black;
+	  background-color: #fff;
+	  margin-top: 15px;
+	  position: relative;
+      left: -11px;
+  }
+
+  #praktek .modul .komponen{
+	width: 106%;
+    height: 124px;
+    border-bottom: 2px solid black;
+    margin-top: 8px;
+    position: relative;
+    left: -24px;
+  }
+
+  #praktek .modul .komponen2{
+	  width: 100%;
+	  height: 120px;
+	  overflow-x: auto;
+  }
+
+  #praktek .modul .komponen .komponen2 img.macamKomponen{
+	  width: 88px;
+	  height: 88px;
+	  border: 1px solid black;
+  }
+
+  #praktek .modul .buttonModul{
+	  width: 102.9%;
+	  height: 91.5px;
+	  border-radius: 0 0 19px 19px;
+	  position: relative;
+	  left: -12px;
+  }
+
+  #praktek .modul .buttonModul .btn{
+	  width: 167px;
+	  height: 37px;
+  }
+
+  #praktek .modul .buttonModul .btnSimpan{
+	  background-color: #35C33B;
+  }
+  #praktek .modul .buttonModul .btnTempel{
+	  background-color: #00BADD;
+  }
+  #praktek .modul .buttonModul .btnUlang{
+	  background-color: #E6CF00;
+  }
+
+  
+  #praktek .keForum{
+	width: 848px;
+	height: 117px;
+	background-color: #DCC7F8;
+	border-radius: 20px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+	left: -15px;
+	margin-top: 14px;
+  }
+  
+  
+  #praktek .keForum p{
+	width: 400px;
+	position: relative;
+	bottom: -8px;
+  }
+  
+  
+  
+  #praktek .keForum .btn{
+	width: 142px;
+	height: 36px;
+	position: relative;
+	bottom: -20px;
+  }
+  
+  
+  
+  /*------------------------------------------------------------------ 
+  selesai praktek
+  --------------------------------------------------------------- */
+  
+
+
+
+/* -----------------------------------------------------------------------------------------
+    forum
+--------------------------------------------------------------------------------------------*/
+
+form .searchForum {
+	width: 57.5%;
+	height: 40px;
+	background-color: #DCC7F8;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+ section#macamPertanyaan{
+	 background-color:#ECF2F8;
+	 width: 100%px;
+	 height: 1463px;
+	 border-radius: 30px;
+	 border: 0.5px solid rgba(0, 0, 0, 0.6);
+	 overflow: hidden;
+ }
+
+ section#macamPertanyaan .jenisPertanyaan{
+	 width: 617px;
+	 min-height: 135px;
+	 border: 1px solid black;
+	 border-radius: 10px;
+	 background-color: white;
+ }
+
+ section#macamPertanyaan  .jenisPertanyaan .fotoUser{
+	 width: 60px;
+	 height: 60px;
+ }
+
+ section#macamPertanyaan .jenisPertanyaan .namaUser{
+	 width: 100%;
+ }
+
+ section#macamPertanyaan .jenisPertanyaan h4.waktu{
+	 font-size: 14px;
+	 float: right;
+ }
+
+
+ section#macamPertanyaan .jenisPertanyaan p{
+	width: 100%;
+    height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: -12px;
+ }
+
+ section#macamPertanyaan .lebihBnyk button{
+	 width: 327px;
+	 height: 44px;
+	 background-color: #7827E6;
+	 box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+ }
+
+.forumDanLeaderboard section#leaderboard{
+	 background: transparent;
+ }
+
+.forumDanLeaderboard section#leaderboard .tingkat1{
+	 height: 724px;
+ }
+
+
+/*----------------------------------------------------------------------------------------------
+    selesai forum
+-------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------------------------------
+     halaman  profile 
+-------------------------------------------------------------------------------------------------*/
+
+
+.profile-page .page-header {
+  height: 380px;
+  background-position:center;
+}
+
+
+.profile-page .profile-content{
+  width: 100%;
+  height: 563px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+margin-top: -250px;
+}
+
+.profile-page .profile-content .avatar img{
+  width: 160px;
+  height: 160px;
+  transform: translate3d(0,-50%,0);
+  box-shadow: 0 5px 15px -8px rgb(0 0 0 / 24%), 0 8px 10px -5px rgb(0 0 0 / 40%);
+}
+
+.profile-page .profile-content .deskripsi{
+  border-top: 1px solid rgba(0, 0, 0, 0.50);
+  margin-top: 150px;
+  padding-top: 90px;
+}
+
+.profile-page .button .btn{
+  width: 320px;
+  height: 56px;
+  background-color: #7827E6;
+  color: white;
+}
+
+
+/*----------------------------------------------------------------------------------------------
+    selesai halaman profile
+-------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------------------------------
+    memilih device
+-------------------------------------------------------------------------------------------------*/
+.memilihDevice img{
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}
+
+.memilihDevice h1.button {
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+  display: inline-block;
+  background: #7827E6;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  width: 275px;
+   height: 46px;
+   color: white;
+ 
+  /* float: right; */
+}
+
+.memilihDevice h1.poin {
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 15px; 
+  border: 1px solid black;
+  width: 200.14px;
+  height: 46px;
+}
+
+.memilihDevice .bodyPoin{
+  bottom: 20px;
+    position: relative;
+}
+
+.memilihDevice .card-text{
+  height: 64%;
+}
+
+.memilihDevice .device {
+  background-color:#ECF2F8;
+  width: 1020px;
+  height: 375px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow:  0px 0px 9px 1px rgba(0, 0, 0, 0.25);;
+}
+
+.macamDevice{
+  width:100%;
+  height: 1197px;
+  margin: 0 auto;
+  border:  2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: auto;
+}
+  
+.memilihDevice .card-body h2 {
+  margin-top: 50px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------
+    selessai memilih device
+    --------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------------------------------------
+  halaman forum detail pertanyaan
+  --------------------------------------------------------------------------------------------------*/
+#memilihMateri-page #conten-header .btnBukaMateri{
+  width: 252px;
+  height: 44px;
+  background-color: #7827E6;
+}
+
+#memilihMateri-page #conten-header .btnBukaMateri:hover{
+  color: black;
+  background-color: transparent;
+
+}
+
+#memilihMateri-page #conten-header img{
+  width: 332px;
+  height: 332px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#memilihMateri-page .conten-body{
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+
+#memilihMateri-page .conten-body .perMateri{
+  width: 95%;
+  height: 92px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+  background-color:#cdddee;  ;
+}
+
+#memilihMateri-page .conten-body .perMateri button{
+  width: 108px;
+  height: 38px;
+  border: 1px solid #151D36;
+}
+
+#memilihMateri-page .conten-body .perMateri button:hover{
+  color: white;
+  background-color: #151D36;
+  ;
+}
+
+
+
+/* -----------------------------------------------------------------------------------------------
+  selsai halaman forum detail pertanyaan
+  --------------------------------------------------------------------------------------------------*/
+
+  
+  
+  /* -----------------------------------------------------------------------------------------------
+    menjawab pertanyaan di forum
+    --------------------------------------------------------------------------------------------------*/
+  
+
+.textareaST{
+  margin-top: 4%;
+  margin-left: 30%;
+  padding: 10px;
+  width: 310px;
+  border: 1px solid #ededed;
+    margin-bottom: 500px;
+
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.03);
+}
+.textareaST form{
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+}
+.textareaST textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  height: 384px;
+}
+
+.textareaST label.labels{
+  color: #151D36;
+}
+
+.textareaST .textarea_style{
+  margin-top: 5px;
+  width: auto;
+  height: auto;
+  border: 1px solid #229CFF;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #D8E8F3;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.textareaST .textarea_style:hover{
+  -moz-box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  -webkit-box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  box-shadow: 0px 0px 10px 1px  #EBF6FF;
+  border: 1px solid #229CFF;
+}
+.textareaST .textarea_style:focus{
+  -moz-box-shadow: 0px 0px 5px 1px #EBF6FF;
+  -webkit-box-shadow: 0px 0px 5px 1px  #EBF6FF;
+  box-shadow: 0px 0px 5px 1px  #EBF6FF;
+  border: 1px solid #229CFF;
+}
+
+.textareaST textarea{
+    border-radius: 30px;
+    width: 98%;
+    padding: 12px 0;
+    background-color: transparent;
+}
+
+.textareaST textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+
+.textareaST textarea::-webkit-scrollbar-thumb {
+  background-color: #DCC7F8;
+    border: 0.5px solid #7827E6;
+}
+
+.textareaST span.textarea_count{
+  margin-top: 2px;
+  float: right;
+  font-size: 10px;
+  color:#EC0F0F;
+}
+
+.textareaST button{
+    width: 276px;
+    height: 52px;
+    background-color:#7827E6;
+  font-size: 1.25rem;
+}
+
+@media (max-width:767px){
+  .textareaST textarea{
+    height: 260px;
+  }
+
+  .textareaST button{
+    width: 172px;
+    height: 43px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+  /* -----------------------------------------------------------------------------------------------
+    selesai  menjawab pertanyaan di forum
+    --------------------------------------------------------------------------------------------------*/
+  
+    
+    /* -----------------------------------------------------------------------------------------------
+      form daftar
+      --------------------------------------------------------------------------------------------------*/
+    
+
+#form-pendaftaran img.logo{
+	width: 181px;
+	margin: 40px 0;
+}
+
+
+
+.profile-pic-div{
+    height: 200px;
+    width: 200px;
+	margin: 20px auto;
+    transform: translate(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+	margin-left: 50%;
+}
+
+.profile-pic-div #photo{
+    height: 100%;
+    width: 100%;
+}
+
+.profile-pic-div #file{
+    display: none;
+}
+
+.profile-pic-div #uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* combobox tgl lahir */
+.login-content input[type="date"]{
+    background-color: transparent;
+    padding: 15px;
+    /* color: #ffffff; */
+	color: #151D36;
+    font-size: 18px;
+    border: 0.5px solid #7827E6;
+    outline: none;
+    border-radius: 5px;
+	width: 360px;
+	margin: 20px 0;
+}
+.login-content ::-webkit-calendar-picker-indicator{
+    background-color: #DCC7F8;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* kelamin */
+.login-content input[type="radio"]{
+    -webkit-appearance: none;
+}
+
+.login-content label{
+	height: 100px;
+	width: 100px;
+	/* border: 6px solid #DCC7F8; */
+	margin: auto;
+	border-radius: 10px;
+	position: relative;
+	color: #DCC7F8;
+	transition: 0.5s;
+ }
+
+ .login-content .fa {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%); 
+}
+
+.login-content label>span {
+	font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+}
+
+.login-content input[type="radio"]:checked + label {
+	background-color: #DCC7F8;
+	color: #151D36;
+	box-shadow: 0 15px 45px rgb(24,249,141,0.2);
+	width: 100px;
+	height: 100px;
+}
+    
+    /* -----------------------------------------------------------------------------------------------
+      selesai form daftar
+      --------------------------------------------------------------------------------------------------*/
+    
