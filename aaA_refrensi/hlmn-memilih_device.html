@@ -1,243 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pilih divice</title>
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- icon bootsrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
 </head>
+
 <body>
-    
-<!-- memilih device -->
-<h1 class="fw-bold text-center fs-1 mb-5">Pilih alat elektronik  yang ingin
-    anda pelajari</h1>
-<div class="macamDevice container">
-    <div class="container d-flex justify-content-center flex-column align-items-center">
-        <div class="memilihDevice mb-3" style="max-width: 1000px;">
-            <div class="device row g-0">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
+
+    <!-- ======= Header ======= -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-biru.png" height="24" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="hlmn-home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hlmn-forum(utama).html">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourTeam">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hlmn-memilih_device.html">Materi</a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="#">
+                                <span><i class="bi bi-cart"></i></span>
+                                <sup><span class="badge badge-pill bg-danger">1</span></sup>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/carausel-1.jpg" class="rounded-circle me-2" height="25" width="25" alt="" loading="lazy" />
+                                M. Nasrullah
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hmln-profile.html"><i class="bi bi-person"></i> Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Keluar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body" style="height:100%;position:relative;width:100%">
-                    <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy A5 2017</h2>
-                    
-                    <div class="row mt-2">
-                        <div class="col-2">Chipset</div>
-                        <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
-                    </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======= selesai Header ======= -->
 
-                    <div class="row mt-2">
-                        <div class="col-2">RAM</div>
-                        <div class="col">: 2GB/3GB</div>
+    <!-- ======= List Device ======= -->
+    <h1 class="fw-bold text-center fs-1 mb-5">Pilih alat elektronik yang ingin anda pelajari</h1>
+    <div class="macamDevice container">
+        <div class="container d-flex justify-content-center flex-column align-items-center">
+            <div class="memilihDevice mb-3" style="max-width: 1000px;">
+                <div class="device row g-0">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="height:100%;position:relative;width:100%">
+                            <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy A5 2017</h2>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Internal</div>
-                        <div class="col">: 16GB/32GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Chipset</div>
+                                <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Camera</div>
-                        <div class="col">: 13MP/5MP</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">RAM</div>
+                                <div class="col">: 2GB/3GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Battery</div>
-                        <div class="col">: 2400mAh</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Internal</div>
+                                <div class="col">: 16GB/32GB</div>
+                            </div>
 
-                        <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h1 class="poin d-flex justify-content-center align-items-center fs-5">500 poin</h1>
-                                </div>
-                                <div class="col-6 ms-auto">
-                                    <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                            <div class="row mt-2">
+                                <div class="col-2">Camera</div>
+                                <div class="col">: 13MP/5MP</div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-2">Battery</div>
+                                <div class="col">: 2400mAh</div>
+                            </div>
+
+                            <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="poin d-flex justify-content-center align-items-center fs-5">500 poin</h1>
+                                    </div>
+                                    <div class="col-6 ms-auto">
+                                        <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="memilihDevice mb-3" style="max-width: 1000px;">
-            <div class="device row g-0">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body" style="height:100%;position:relative;width:100%">
-                    <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy J5 Prime</h2>
-                    
-                    <div class="row mt-2">
-                        <div class="col-2">Chipset</div>
-                        <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
+            <div class="memilihDevice mb-3" style="max-width: 1000px;">
+                <div class="device row g-0">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="height:100%;position:relative;width:100%">
+                            <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy J5 Prime</h2>
 
-                    <div class="row mt-2">
-                        <div class="col-2">RAM</div>
-                        <div class="col">: 2GB/3GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Chipset</div>
+                                <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Internal</div>
-                        <div class="col">: 16GB/32GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">RAM</div>
+                                <div class="col">: 2GB/3GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Camera</div>
-                        <div class="col">: 13MP/5MP</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Internal</div>
+                                <div class="col">: 16GB/32GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Battery</div>
-                        <div class="col">: 2400mAh</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Camera</div>
+                                <div class="col">: 13MP/5MP</div>
+                            </div>
 
-                        <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h1 class="poin d-flex justify-content-center align-items-center fs-5">439 poin</h1>
-                                </div>
-                                <div class="col-6 ms-auto">
-                                    <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                            <div class="row mt-2">
+                                <div class="col-2">Battery</div>
+                                <div class="col">: 2400mAh</div>
+                            </div>
+
+                            <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="poin d-flex justify-content-center align-items-center fs-5">439 poin</h1>
+                                    </div>
+                                    <div class="col-6 ms-auto">
+                                        <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="memilihDevice mb-3" style="max-width: 1000px;">
-            <div class="device row g-0">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body" style="height:100%;position:relative;width:100%">
-                    <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy Tab A8 With S Pen</h2>
-                    
-                    <div class="row mt-2">
-                        <div class="col-2">Chipset</div>
-                        <div class="col">Exynos 7904 (14)</div>
+            <div class="memilihDevice mb-3" style="max-width: 1000px;">
+                <div class="device row g-0">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="height:100%;position:relative;width:100%">
+                            <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy Tab A8 With S Pen</h2>
 
-                    <div class="row mt-2">
-                        <div class="col-2">RAM</div>
-                        <div class="col">: 2GB/3GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Chipset</div>
+                                <div class="col">Exynos 7904 (14)</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Internal</div>
-                        <div class="col">: 16GB/32GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">RAM</div>
+                                <div class="col">: 2GB/3GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Camera</div>
-                        <div class="col">: Camera =5MP/2MP</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Internal</div>
+                                <div class="col">: 16GB/32GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Battery</div>
-                        <div class="col">: 4200mAh</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Camera</div>
+                                <div class="col">: Camera =5MP/2MP</div>
+                            </div>
 
-                        <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h1 class="poin d-flex justify-content-center align-items-center fs-5">300 poin</h1>
-                                </div>
-                                <div class="col-6 ms-auto">
-                                    <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                            <div class="row mt-2">
+                                <div class="col-2">Battery</div>
+                                <div class="col">: 4200mAh</div>
+                            </div>
+
+                            <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="poin d-flex justify-content-center align-items-center fs-5">300 poin</h1>
+                                    </div>
+                                    <div class="col-6 ms-auto">
+                                        <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="memilihDevice mb-3" style="max-width: 1000px;">
-            <div class="device row g-0">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body" style="height:100%;position:relative;width:100%">
-                    <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy A5 2017</h2>
-                    
-                    <div class="row mt-2">
-                        <div class="col-2">Chipset</div>
-                        <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
+            <div class="memilihDevice mb-3" style="max-width: 1000px;">
+                <div class="device row g-0">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="assets/img/carousel-3.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="height:100%;position:relative;width:100%">
+                            <h2 class="card-title fw-bold fs-4 mb-4">Perakitan Samsung Galaxy A5 2017</h2>
 
-                    <div class="row mt-2">
-                        <div class="col-2">RAM</div>
-                        <div class="col">: 2GB/3GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Chipset</div>
+                                <div class="col">: Exynoss 7570 quad-core 1.4GHz</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Internal</div>
-                        <div class="col">: 16GB/32GB</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">RAM</div>
+                                <div class="col">: 2GB/3GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Camera</div>
-                        <div class="col">: 13MP/5MP</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Internal</div>
+                                <div class="col">: 16GB/32GB</div>
+                            </div>
 
-                    <div class="row mt-2">
-                        <div class="col-2">Battery</div>
-                        <div class="col">: 2400mAh</div>
-                    </div>
+                            <div class="row mt-2">
+                                <div class="col-2">Camera</div>
+                                <div class="col">: 13MP/5MP</div>
+                            </div>
 
-                        <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h1 class="poin d-flex justify-content-center align-items-center fs-5">500 poin</h1>
-                                </div>
-                                <div class="col-6 ms-auto">
-                                    <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                            <div class="row mt-2">
+                                <div class="col-2">Battery</div>
+                                <div class="col">: 2400mAh</div>
+                            </div>
+
+                            <div class="bodyPoin" style="position: absolute;bottom:0;width:100% ;margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="poin d-flex justify-content-center align-items-center fs-5">500 poin</h1>
+                                    </div>
+                                    <div class="col-6 ms-auto">
+                                        <h1 class="button rounded-pill d-flex justify-content-center align-items-center fs-5">ayo mulai belajar</h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
-</div>
+    <!-- ======= selesai List Device ======= -->
 
-<!-- CTA -->
-<section id="cta">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="d-inline-block">Mulai berdiskusi di, <br> <span>Forum</span> Study Tools</h2><br>
-          <p class="d-inline-block">Tanyakan pada komunitas kami <br>Bergabung dalam diskusi dan ajukan<br> pertanyaan di Forum Study Tools <br></p>
-          <div class="button d-inline-block">
-              <br>
-            <a href="" class="forum btn fw-bold">Forum</a>
-          </div>
+    <!-- ======= CTA ======= -->
+    <section class="p-5 mb-4 ">
+        <div class="card get-started p-md-5">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title mb-3 fw-bold">Mulai berdiskusi di, <span class="text-danger">forum</span> Study Tools!</h2>
+                        <p class="card-text">
+                            Tanyakan pada komunitas kami Bergabung dalam diskusi dan ajukan pertanyaan di Forum Study Tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-lg-column align-items-center justify-content-center p-3">
+                    <a href="" class="btn rounded-pill w-50 forum fw-bold">Forum</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- selesai CTA -->
+    </section>
+    <!-- ======= selesai CTA ======= -->
 
+    <!-- ======= Footer ======= -->
+    <section class="footer">
+        <footer class="text-white text-center text-md-start">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <img src="assets/img/logo-putih.png" alt="" width="308px" class="logo mb-4">
+                        <p>Belajar dimanapun, kapanpun dan siapapun</p>
+                    </div>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="assets/javascript/script.js"></script>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase fw-bold mb-3">Jelajahi</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="hlmn-home.html" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="#ourTeam" class="text-white">Team</a>
+                            </li>
+                            <li>
+                                <a href="hlmn-memilih_device.html" class="text-white">Materi</a>
+                            </li>
+                            <li>
+                                <a href="hlmn-forum(utama).html" class="text-white">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase fw-bold mb-3">Kunjungi Kami</h5>
+                        <section class="mb-4">
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright <a class="text-white" href="">StudyTools</a>. All Rights Reserved.
+            </div>
+        </footer>
+    </section>
+    <!-- ======= selesai Footer ======= -->
+
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Main JS -->
+    <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
