@@ -465,6 +465,10 @@ footer li{
 /* <==== selesai Header & Footer ====> */
 
 /* <==== Halaman Home ====> */
+.bg-section-support{
+  background-color: #EFF2F6;
+}
+
 /* carousel */
 #carouselExampleControls{
   width: 100%;
@@ -488,52 +492,24 @@ footer li{
 }
 /* selesai why us */
 
-/* mulai belajar */
-#mulaiBelajarHalUtama{
-  background-color: #EFF2F6;
-  width: 100%;
-  height: 630px;
-}
-/* selesai mulai belajar */
-
-/* forum */
-#forumDiHalUtama{
-  height: 630px;
-  width: 100%;
-}
-/* selesai forum */
-
-/*  materi dan forum */
-#mulaiBelajarHalUtama p ,#forumDiHalUtama p{
-  margin: 144px 0 24px 0;
-}
-
-#forumDiHalUtama a , #mulaiBelajarHalUtama a{
-  background-color: #7827E6;
-  color:white;
-  display: grid;
-  width: 220px;
-  height: 46px;
-  border-radius: 50px;
-  font-size: 20px;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width:993px){
-  #forumDiHalUtama img , #mulaiBelajarHalUtama img{
-    display: none;
-  }
-  #mulaiBelajarHalUtama p ,#forumDiHalUtama p{
-    margin: 144px 0 24px 0;
-    text-align: center;
-  }
-  #forumDiHalUtama a , #mulaiBelajarHalUtama a{
-    margin: 0 auto;
-  }
-}
-/* selsai  materi dan forum */
-
 /* leaderboard */
+.leaderboard{
+  border-radius: 30px;
+}
+
+.bg-poin{
+  background-color: #F3E033;
+}
+
+.leaderboard .top-ten{
+  background-color: #9B8BDE;
+  border-radius: 50px;
+}
+
+.leaderboard .top-ten .d-flex{
+  background-color: #E0F2FF;
+}
+
 #leaderboard{
   width: 100%;
   height: 744px;
