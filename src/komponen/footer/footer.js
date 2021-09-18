@@ -1,6 +1,9 @@
 // import React from 'react'
 import "./footer.css"
 import '../../index.css';
+import logo from "../../logo-ST/logo-putih.png"
+
+
 
 function Footer() {
     return (
@@ -8,7 +11,7 @@ function Footer() {
                 <div className="container p-4">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        {/* <img src="assets/img/logo-putih.png" alt="" width="308px" className="logo mb-4"> */}
+                        <img src={logo} alt="" width="308px" className="logo mb-4" />
                         <p>Belajar dimanapun, kapanpun dan siapapun</p>
                     </div>
 

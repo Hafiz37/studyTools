@@ -1,6 +1,7 @@
 // import React from 'react'
 import './styleNavbar.css';
 import '../../index.css';
+import logo from "../../logo-ST/logo-biru.png"
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">
-                <img src="" height="24" alt="" />
+                <img src={logo} height="24" alt="" />
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
