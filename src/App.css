@@ -1,1 +1,14 @@
 
+nav{
+    background-color: rgb(1,47,124);
+  }
+  
+  nav .navbar-brand{
+    width: 136px;
+    margin-top: -17px;
+    padding: 18px 14px 8px 14px;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    left: 4%;
+    top:8px;
+  }

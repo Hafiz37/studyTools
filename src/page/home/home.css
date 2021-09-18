@@ -1,0 +1,97 @@
+/* carousel */
+#carouselExampleControls{
+    width: 100%;
+  }
+  /* selesai carousel */
+
+
+  /* <==== Halaman Home ====> */
+.bg-section-support{
+    background-color: #EFF2F6;
+  }
+  
+
+/* why us */
+#whyUs{
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  
+  #whyUs h3.baris ,#whyUs h2{
+    color: #555B63;
+  }
+  
+  #whyUs .baris3 i.icon{
+    box-sizing: content-box;
+    color: black;
+    background-color: #9B8BDE;
+  }
+  /* selesai why us */
+  
+
+
+  
+/* testimonial */
+#carouselTestimonial{
+    background: linear-gradient(180deg, #265188 55%, white 45%);
+    border-radius: 25px;
+  }
+  
+  #carouselTestimonial .carousel-control-next,#carouselTestimonial .carousel-control-prev{
+    align-items: flex-end;
+    /* margin-bottom: 15px; */
+    margin-bottom: 56px;
+  }
+  /* selesai testimonial */
+  
+
+  
+
+  
+/* cta */
+.get-started{
+    background-color: #DCC7F8;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  .get-started a.mulai-belajar{
+    background-color: #7827E6;
+    color:white;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .get-started a.forum{
+    border: 2px solid black;
+    color:#151d36;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .get-started .mulai-belajar:hover{
+    background: #f3f3f3;
+    color: #151d36;
+    transition: all 0.5s;
+  }
+  
+  .get-started .forum:hover{
+    background: #151d36;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  
+  /* tombol login,signupdan get started saat aktif */
+  .get-started a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #151d36;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.4s;
+  }
+  /* selesai cta */
+  
+  
