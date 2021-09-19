@@ -1,0 +1,172 @@
+
+/* <==== Hero ====> */
+#hero {
+	width: 100%;
+	height: 680px;
+	background: linear-gradient(292.45deg, #7827e6 33.61%, rgba(220, 199, 248, 0.96) 105.2%);
+}
+
+#hero .h1h2{
+	margin-top: 50px;
+}
+
+#hero .logo{
+	position: absolute;
+    top: 32px;
+}
+
+#hero h1 {
+	margin: -120px 0 0 0;
+	font-size: 56px;
+	font-weight:bold;
+	line-height: 70px;
+	color: #fff;
+	width: 600px;
+}
+  
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 45px;
+	margin-top: 60px;
+	font-size: 24px;
+}
+
+/* tombol get started dan sign up */
+#hero .btn-get-started, #hero .btn-sign-up {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px 28px ;
+	border-radius: 50px;
+	transition: 0.5s;
+	color: #151d36;
+	background: #fff;
+    margin-top: 20px;
+}
+  
+/* membedakan button signup */
+#hero .btn-sign-up{
+	padding: 10px 40px ;
+	color: #fff;
+	background:none;
+	border: 2px solid #151d36;
+}
+  
+/* button get started dan signup saat hoover */
+#hero .btn-get-started:hover, #hero .btn-sign-up:hover {
+	background: #151d36;
+	color: #fff;
+}
+  
+#hero .signUp{
+	padding-left: 42px;
+}
+
+/* tombol login,signupdan get started saat aktif */
+#hero a:focus {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 20px;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #151d36;
+	color: #fff;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+	
+/* #hero .logIn h3{
+	display: inline-block;
+	margin:5px 16px 0 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+} */
+
+#hero .logIn  {
+	display: flex;
+	float: right;
+	margin-top: -126px;
+}
+	
+/* tombol login saat aktif */
+#hero .logIn a.button:focus{
+		display: inline-block;
+}
+	
+/* membuat animasi */
+#hero .animasi {
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+	0% {
+		transform: translateY(10px);
+	
+  }
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes up-down {
+	0% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+/* responsive hero */
+@media (max-width: 991px) {
+	#hero {
+	  height: 100vh;
+	  text-align: center;
+	}
+	#hero .animated {
+	  -webkit-animation: none;
+	  animation: none;
+	}
+	#hero .hero-img {
+	  text-align: center;
+	}
+	#hero .hero-img img {
+	  width: 50%;
+	}
+}  
+  
+@media (max-width: 700px) {
+  #hero{
+	  width: 100%;
+  }
+	#hero h1 {
+	  font-size: 28px;
+	  line-height: 36px;
+	}
+	#hero h2 {
+	  font-size: 18px;
+	  line-height: 24px;
+	  margin-bottom: 30px;
+	}
+	#hero .hero-img img {
+	  width: 70%;
+	}
+}
+  
+@media (max-width: 575px) {
+	#hero .hero-img img {
+	  width: 80%;
+	}
+	#hero .btn-get-started {
+	  font-size: 16px;
+	  padding: 10px 24px 11px 24px;
+	}
+}
+/* <==== selesai Hero ====> */  
+
+
+

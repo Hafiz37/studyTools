@@ -14,7 +14,11 @@ import Leaderboard from './komponen/leaderbord/leaderboard';
 import HomePage from "./page/home/home"
 import LoginPage from "./page/login-page/login"
 import ForumUtama from "./page/forum(utama)/forum(utama)"
+import memilihPraktikum from "./page/memilih-praktikum/memilih-praktikum"
 import ProfilePage from "./page/profile-page/profile-page"
+import LandingPage from "./page/landing-page/landing-page"
+import MemilihPraktikum from "./page/memilih-praktikum/memilih-praktikum"
+import DetailPraktikum from "./page/detailPraktikum-memilihMateri/detail-praktikum";
 
 
 
@@ -29,9 +33,9 @@ function App() {
     <Router>
       <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="#"><Link to="/home">
                 <img src={LogoBiru} height="24" alt="" />
-            </a>
+            </Link></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +51,7 @@ function App() {
                     <Link to="/ourTeam"><a className="nav-link" href="#ourTeam">Team</a></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/materi"><a className="nav-link" href="hlmn-memilih_device.html">Materi</a></Link>
+                    <Link to="/memilihPraktikum"><a className="nav-link" href="hlmn-memilih_device.html">Materi</a></Link>
                 </li>
                 <li className="nav-item me-3 me-lg-0">
                     <a className="nav-link" href="#">
@@ -62,10 +66,7 @@ function App() {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><Link to="/profile"><a className="dropdown-item" href="hmln-profile.html"><i className="bi bi-person"></i> Profile</a></Link></li>
-                    {/* <li>
-                        <hr className="dropdown-divider">
-                    </li> */}
-                    <li><a className="dropdown-item" href="#"><i className="bi bi-box-arrow-right"></i> Keluar</a></li>
+                    <li><Link to="/logOut"><a className="dropdown-item" href="#"><i className="bi bi-box-arrow-right"></i> Keluar</a></Link></li>
                     </ul>
                     </li>
                 </ul>
@@ -84,14 +85,20 @@ function App() {
         <Route path="/ourTeam">
           <HomePage />
         </Route>
-        <Route path="/materi">
-          <HomePage />
+        <Route path="/memilihPraktikum">
+          <MemilihPraktikum />
         </Route>
         <Route path="/profile">
           <ProfilePage />
         </Route>
+        <Route path="/logOut">
+          <LandingPage />
+        </Route>
       </Switch>
     </Router>                  
+
+
+                    <DetailPraktikum /> 
 
 
       <Footer />
