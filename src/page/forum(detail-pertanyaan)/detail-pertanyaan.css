@@ -1,0 +1,80 @@
+
+
+#detailPertanyaan-head{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* padding: 20px 20px; */
+    border-radius: 15px;
+    height: auto;
+}
+
+#detailPertanyaan-head .garisDetail{
+    width: 102.01%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+
+#detailPertanyaan-head img{
+    width: 72px;
+    height: 72px;
+    border: 1px solid black;
+}
+
+#detailPertanyaan-head .btn-jwb{
+    height: 50%;
+}
+
+
+
+#detailPertanyaan-head button{
+    width: 316px;
+    height: 44px;
+    background-color:#7827E6;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+#detailPertanyaan-body{
+	width: 100%;
+	/* min-height: 723px; */
+	height: auto;
+	background-color: #D8E8F3;
+	margin: 0 auto;
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#detailPertanyaan-body .label{
+	width: 102.3%;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#detailPertanyaan-body .perJawaban{
+	width: 90%;
+	min-height: 180px;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+#detailPertanyaan-body .perJawaban .deskripsi{
+    width: 100%;
+    position: relative;
+    right: -12px;
+}
+
+#detailPertanyaan-body .perJawaban .deskripsi .verived h4{
+	border: 5px solid #04CF00;
+	border-radius: 15px;
+	width: 148px;
+	height: 39px;
+}
+
+
+
+#detailPertanyaan-body .perJawaban .jawaban p{
+    width: 97%;
+    
+}
+
+

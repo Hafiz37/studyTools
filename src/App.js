@@ -21,6 +21,7 @@ import MemilihPraktikum from "./page/memilih-praktikum/memilih-praktikum"
 import DetailPraktikum from "./page/detailPraktikum-memilihMateri/detail-praktikum";
 import ModulPraktikum from "./page/modul-praktikum/modulPraktikum";
 import JwbPertanyaanForum from "./page/forum(jwb-pertanyaan)/jwb-pertanyaan";
+import DetailPertanyaan from "./page/forum(detail-pertanyaan)/detail-pertanyaan";
 
 
 
@@ -100,7 +101,7 @@ function App() {
     </Router>                  
 
 
-                    <JwbPertanyaanForum /> 
+                    <DetailPertanyaan /> 
 
 
       <Footer />
