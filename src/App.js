@@ -101,7 +101,7 @@ function App() {
     </Router>                  
 
 
-                    <DetailPertanyaan /> 
+                    <LoginPage /> 
 
 
       <Footer />

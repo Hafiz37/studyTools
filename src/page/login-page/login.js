@@ -1,40 +1,41 @@
 import React from 'react'
 import "./login.css"
 import Logo from "../../logo-ST/logo.png"
+import "../../css/bootstrap.min.css"
 
 function Login() {
     return (
         
 <div id="loginPage">
-	<img class="wave-login" src="assets/img/ilustrasi/bg-login.png" />
-	<div class="containerLogIn">
-		<div class="img" />
+	<img className="wave-login" src={Logo} />
+	<div className="containerLogIn">
+		<div className="img" />
 			<img src="assets/img/ilustrasi/login-1.png" />
 		</div>
-		<div class="login-content">
+		<div className="login-content">
 			<form action="index.html">
 				{/* <img src={Logo} /> */}
-				<h2 class="title">Masuk sebagai pengguna</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
+				<h2 className="title">Masuk sebagai pengguna</h2>
+           		<div className="input-div one">
+           		   <div className="i">
+           		   		<i className="fas fa-user"></i>
            		   </div>
-           		   <div class="div">
+           		   <div className="div">
            		   		<h5>Email</h5>
-           		   		<input type="email" class="input" />
+           		   		<input type="email" className="input" />
            		   </div>
            		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
+           		<div className="input-div pass">
+           		   <div className="i"> 
+           		    	<i className="fas fa-lock"></i>
            		   </div>
-           		   <div class="div">
+           		   <div className="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input" />
+           		    	<input type="password" className="input" />
             	   </div>
             	</div>
             	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login" />
+            	<input type="submit" className="btn" value="Login" />
             </form>
         </div>
     </div>
@@ -55,13 +56,13 @@ export default Login
 
 // function addcl(){
 // 	let parent = this.parentNode.parentNode;
-// 	parent.classList.add("focus");
+// 	parent.classNameList.add("focus");
 // }
 
 // function remcl(){
 // 	let parent = this.parentNode.parentNode;
 // 	if(this.value == ""){
-// 		parent.classList.remove("focus");
+// 		parent.classNameList.remove("focus");
 // 	}
 // }
 
