@@ -2,11 +2,13 @@ import React from 'react'
 import "./detailPraktikum.css"
 
 import gambarSementara from "../../page/home/carausel/carausel-1.jpg"
+import Navbar from '../../komponen/navbar/navbar'
 
 
 function DetailPraktikum() {
     return (
         <div id="memilihMateri-page">
+            <Navbar/>
             
     <section id="conten-header" class="container">
         <div class="row mb-2">
@@ -24,7 +26,7 @@ function DetailPraktikum() {
                         Chipset =Exynoss 7570 quad-core 1.4GHz <br/> Ram       =  2GB/3GB <br/> Internal  =  16GB/32GB <br/> Camera  = 13MP/5MP <br/> Battery   = 2400mAh   
                     </p>
                 </div>
-                <button type="button" class="btnBukaMateri btn rounded-pill text-white fw-bold">Buka Materi</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btnBukaMateri btn rounded-pill text-white fw-bold">Buka Materi</button></a>
             </div>
             <div class="col d-flex justify-content-end">
                 <img src={gambarSementara} alt="" class="gambarMateri"/>
@@ -48,7 +50,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -59,7 +61,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -70,7 +72,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -81,7 +83,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -92,7 +94,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -103,7 +105,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -114,7 +116,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -125,7 +127,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
         <div class="perMateri row ms-auto me-auto mt-4 d-flex justify-content-center align-items-center container pt-1 fs-4">
@@ -136,7 +138,7 @@ function DetailPraktikum() {
                 <h4 class="namaMateri"> Perkenalan materi </h4>
             </div>
             <div class="col">
-                <button type="button" class="btn rounded-pill fw-bold">Buka</button>
+                <a href="/memilihPraktikum/DetailPraktikum/Modul"><button type="button" class="btn rounded-pill fw-bold">Buka</button></a>
             </div>
         </div>
 

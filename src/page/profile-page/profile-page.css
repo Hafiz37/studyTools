@@ -13,17 +13,17 @@
   
   .profile-page .profile-content{
     width: 100%;
-    height: 563px;
+    height: 100%;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
-  margin-top: -250px;
+    margin-top: -250px;
   }
   
   .profile-page .profile-content .avatar img{
     width: 160px;
     height: 160px;
-    transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-60%,0);
     box-shadow: 0 5px 15px -8px rgb(0 0 0 / 24%), 0 8px 10px -5px rgb(0 0 0 / 40%);
   }
 
@@ -40,12 +40,18 @@
     margin-top: 150px;
     padding-top: 90px;
   }
+
+  @media (max-width: 768px) {
+    .profile-page .profile-content .deskripsi{
+      border-top: 1px solid rgba(0, 0, 0, 0.50);
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+  }
   
-  .profile-page .button .btn{
+  .profile-page .btn{
     width: 320px;
     height: 56px;
-    background-color: #7827E6;
-    color: white;
   }
   
   

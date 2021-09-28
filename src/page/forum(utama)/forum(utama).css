@@ -3,14 +3,22 @@
     forum
 --------------------------------------------------------------------------------------------*/
 
-form .searchForum {
+.rounded-25{
+	border-radius: 25px;
+}
+  
+.rounded-10{
+	border-radius: 10px;
+}
+
+/* form .searchForum {
 	width: 57.5%;
 	height: 40px;
 	background-color: #DCC7F8;
 	border: 2px solid rgba(0, 0, 0, 0.5);
-}
+} */
 
- section#macamPertanyaan{
+/* section#macamPertanyaan{
 	 background-color:#ECF2F8;
 	 width: 100%px;
 	 height: 1463px;
@@ -56,12 +64,29 @@ form .searchForum {
 	 box-shadow: 0 7px 4px rgba(0, 0, 0, 0.25);
  }
 
+ .forumDanLeaderboard .btn-tanya, .forumDanLeaderboard .btn-komentar{
+	 background-color: #7827E6;
+	 width: 60%;
+	 height: 44px;
+ }
+
+ .forumDanLeaderboard .btn-komentar{
+	 background-color: transparent;
+	 box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+	 border: 1px solid rgba(0, 0, 0, 0.253);
+	 color: #151D36;
+ }
+
 .forumDanLeaderboard section#leaderboard{
 	 background: transparent;
  }
 
 .forumDanLeaderboard section#leaderboard .tingkat1{
 	 height: 724px;
+ } */
+
+ .forumDanLeaderboard .flex-md-row .btn{
+	 width: 300px;
  }
 
 

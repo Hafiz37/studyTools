@@ -95,3 +95,40 @@
   /* selesai cta */
   
   
+/* our team */
+#ourTeam{
+  width: 100%;
+  height: 645px;
+  background-color:#EFF2F6 ;
+}
+
+#ourTeam h1{
+  margin: 130px 0 100px 0;
+}
+
+#ourTeam .cardd{
+  width: 350px;
+  height: 185px;
+  border-radius: 10px;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+#ourTeam img{
+  width: 152px;
+  height: 152px;
+  border: 8px solid white;
+  margin: -70px auto 0 auto;
+}
+
+@media (max-width:1200px) {
+  #ourTeam{
+    height: auto;
+  }
+  #ourTeam .perOrang{
+    margin-top: 120px;
+  }
+}
+/* selesai our team */

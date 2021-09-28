@@ -1,9 +1,11 @@
 import "./modulPraktikum.css"
 import React from 'react'
+import Navbar from "../../komponen/navbar/navbar"
 
 function ModulPraktikum() {
     return (
         <div>
+          <Navbar/>
             
 
         
@@ -84,7 +86,7 @@ function ModulPraktikum() {
                     </div>
                 </div>
                 <div class="bg-btnKirim border border-dark d-flex justify-content-center bg-light">
-                    <a href="" type="button" class="buttonKirim text-light d-flex justify-content-center align-items-center  fs-5 fw-bold btn mt-auto  mb-3 rounded-pill position-relative">Kirim</a>
+                    <a href="/" type="button" class="buttonKirim text-light d-flex justify-content-center align-items-center  fs-5 fw-bold btn mt-auto  mb-3 rounded-pill position-relative">Kirim</a>
                 </div>
             </div>
             <div class="col-8">

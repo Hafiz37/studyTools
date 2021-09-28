@@ -3,83 +3,22 @@
 /*----------------------------------------------------------------------------------------------
     memilih device
 -------------------------------------------------------------------------------------------------*/
-.memilihDevice{
-    max-width: 1000px;
+.macamDevice{
+  width:100%;
+  /* height: 1000px;
+  overflow: auto; */
 }
 
+.macamDevice button{
+  background-color: #7827E6;
+  color: white;
+}
 
-.memilihDevice img{
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
-  }
-  
-  .memilihDevice h1.button {
-    padding: 5px 10px;
-    background-color: cornflowerblue;
-    display: inline-block;
-    background: #7827E6;
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
-    width: 275px;
-     height: 46px;
-     color: white;
-   
-    /* float: right; */
-  }
-  
-  .memilihDevice h1.poin {
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 15px; 
-    border: 1px solid black;
-    width: 200.14px;
-    height: 46px;
-  }
-  
-  .memilihDevice .bodyPoin{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      margin-bottom: 60px;
-  }
-  
-  .memilihDevice .card-text{
-    height: 64%;
-  }
-  
-  .memilihDevice .device {
-    background-color:#ECF2F8;
-    width: 1020px;
-    height: 375px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow:  0px 0px 9px 1px rgba(0, 0, 0, 0.25);;
-  }
-  
-  .macamDevice{
-    width:100%;
-    /* height: 1197px; */
-    min-height: 1100px;
-    margin: 0 auto;
-    border:  2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    /* overflow: auto; */
-    padding: 20px 0;
-  }
-
-  .memilihDevice .card-body{
-      height: 100%;
-      position: relative;
-      width: 100%;
-  }
-    
-  .memilihDevice .card-body h2 {
-    margin-top: 50px;
-  }
-  
-  
-  
+.macamDevice button:hover{
+  color: #151D36;
+  background-color:#DCC7F8 ;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25,);
+}
   /* ---------------------------------------------------------------------------------------
       selessai memilih device
       --------------------------------------------------------------------------------------- */
