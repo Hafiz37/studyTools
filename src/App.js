@@ -119,6 +119,8 @@ function App() {
       </Router>
 
 
+                    {/* <LoginPage />  */}
+
 
       <Footer />
     </div>
