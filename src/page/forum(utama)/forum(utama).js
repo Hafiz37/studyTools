@@ -135,17 +135,18 @@ function ForumUtama() {
               </div>
             </div>
             <div class="mt-5">
-              <button type="button" class="btn btn-primary btn-block rounded-pill w-100">Muat lebih banyak</button>
+              <button type="button" class="btn-lebihBanyak btn fw-bold text-white btn-block rounded-pill w-100">Muat lebih banyak</button>
             </div>
           </div>
           {/* <!-- ======= selesai List Pertanyaan ======= --> */}
 
+{/* <Leaderboard/> */}
           {/* <!-- ======= Leaderboard ======= --> */}
           <div className="col">
             < Leaderboard />
             <div className="mt-4 d-flex flex-column flex-md-row flex-xl-column align-items-center justify-content-md-between align-items-xl-center">
-              <a href="/forum/TanyaPertanyaan"><button className="btn btn-primary rounded-pill fw-bold mb-2 mb-md-0 mb-xl-2">Tanya Yuk</button></a>
-              <button className="btn btn-outline-dark rounded-pill">Komentari Study Tools Dong</button>
+              <a href="/forum/TanyaPertanyaan"><button className="btn-tanyaYuk btn btn-primary rounded-pill fw-bold mb-2 mb-md-0 mb-xl-2">Tanya Yuk</button></a>
+              <button className="btn btn-outline-dark rounded-pill fw-bold">Komentari Study Tools Dong</button>
             </div>
           </div>
           {/* <!-- ======= selesai Leaderboard ======= --> */}

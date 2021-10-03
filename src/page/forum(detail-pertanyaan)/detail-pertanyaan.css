@@ -1,18 +1,23 @@
 
 #detailPertanyaan-head{
-    border: 2px solid rgba(0, 0, 0, 0.5);
+	border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
 #detailPertanyaan-head img{
-    width: 60px;
+	width: 60px;
     height: 60px;
     border: 1px solid black;
 }
 
+#detailPertanyaan-head p{
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
-    #detailPertanyaan-head .btn{
-        width: 100% !important;
+	#detailPertanyaan-head .btn{
+		width: 100% !important;
     } 
 }
 
@@ -45,11 +50,13 @@
     right: -12px;
 }
 
+
 #detailPertanyaan-body .perJawaban .deskripsi .verived h4{
-	border: 5px solid #04CF00;
+	border: 4px solid #04CF00;
 	border-radius: 15px;
-	width: 148px;
-	height: 39px;
+	padding: 4px 16px;
+	/* width: 148px;
+	height: 39px; */
 }
 
 
@@ -57,4 +64,8 @@
 #detailPertanyaan-body .perJawaban .jawaban p{
     width: 97%;
     
+}
+
+#detailPertanyaan-head .btn-jwb{
+	background-color: #7827E6 ;
 }

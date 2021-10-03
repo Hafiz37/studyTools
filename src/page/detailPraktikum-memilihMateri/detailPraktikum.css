@@ -1,47 +1,42 @@
+.btn{
+  height: 40px;
+}
+
 #memilihMateri-page #conten-header .btnBukaMateri{
-    width: 252px;
-    height: 44px;
-    background-color: #7827E6;
-  }
+  background-color: #7827E6;
+}
   
-  #memilihMateri-page #conten-header .btnBukaMateri:hover{
-    color: black;
-    background-color: transparent;
+#memilihMateri-page #conten-header .btnBukaMateri:hover{
+  color: black !important;
+  background-color: transparent;  
+}
+
+#memilihMateri-page #conten-header .btn{
+  width: 250px;
+}
   
-  }
+#memilihMateri-page .conten-body{
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+    
+#memilihMateri-page .conten-body .perMateri{
+  width: 95%;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
+  background-color:#cdddee;  ;
+}
   
-  #memilihMateri-page #conten-header img{
-    width: 332px;
-    height: 332px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-  }
+#memilihMateri-page .conten-body .perMateri button{
+  width: 108px;
+  border: 1px solid #151D36;
+}
   
-  #memilihMateri-page .conten-body{
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-  }
-  
-  
-  #memilihMateri-page .conten-body .perMateri{
-    width: 95%;
-    height: 92px;
-    border-radius: 20px;
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.25);
-    background-color:#cdddee;  ;
-  }
-  
-  #memilihMateri-page .conten-body .perMateri button{
-    width: 108px;
-    height: 38px;
-    border: 1px solid #151D36;
-  }
-  
-  #memilihMateri-page .conten-body .perMateri button:hover{
-    color: white;
-    background-color: #151D36;
-    ;
-  }
+#memilihMateri-page .conten-body .perMateri button:hover{
+  color: white;
+  background-color: #151D36;
+}
   
   

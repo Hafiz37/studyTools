@@ -1,4 +1,3 @@
-
 #body-kursus{
 	background-color: #DCC7F8;
 	border: 2px solid rgba(0, 0, 0, 0.6);
@@ -12,46 +11,7 @@
 	border-radius: 15px;
 	width: 94%;
 }
-
-#body-kursus .perMateri h3.judul{
-	width: 80%;
-	min-height: 10px;
-}
-
-#body-kursus .perMateri h4.sertifikat{
-	background-color: #FFD700;
-	width: 284px;
-	height: 36px;
-	margin-left: 32px;
-}
-
-
-
-
-#body-kursus .perMateri p.selesai{
-	width: 142px;
-	height: 38px;
-	border: 2px solid #151d36b0;
-	border-radius: 10px;
-}
-
-
-#body-kursus .perMateri .progres-bar{
-	border: 2px solid #151d36b0;
-	width: 228px;
-	height: 44px;
-	border-radius: 10px;
-	margin-bottom: -20px;
-}
-
-#body-kursus .perMateri button{
-	width: 228px;
-	height: 44px;
-	background-color: #7827E6;
-	margin-bottom: -2px;
-}
-
-#body-kursus img{
+.perMateri img{
 	width: 220px;
 	height: 220px;
 	border: 2px solid #151d36b0;

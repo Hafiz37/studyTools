@@ -81,7 +81,7 @@ function Home() {
       {/* <!-- ======= selesai Why Us ======= --> */}
 
       {/* <!-- ======= Mulai Belajar Halaman Utama ======= --> */}
-      <section class="bg-section-support">
+      <section class="mulaiBelajar bg-section-support">
         <div class="container col-xxl-8 px-4 py-3">
           <div class="row flex-lg-row align-items-center g-5 py-5">
             <div class="col-12 col-sm-8 col-lg-6">
@@ -91,7 +91,7 @@ function Home() {
               <h2 class="display-5 fw-bold lh-1 mb-3 text-sm-start text-center">Materi dan Praktikum Secara Online</h2>
               <p class="lead">Bongkar pasang alat elektronikmu sendiri? Emang bisa? Selesaikan kelas dan tantangan yang ada, dan kamu akan bisa melakukannya sendiri.</p>
               <div class="mt-3 d-grid d-md-flex justify-content-md-start">
-                <a href="/memilihPraktikum" class="btn btn-primary btn-lg rounded-pill shadow fw-bold">Mulai Belajar</a>
+                <a href="/memilihPraktikum" class="btn btn-primary btn-lg rounded-pill shadow fw-bold d-flex justify-content-center align-items-center">Mulai Belajar</a>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ function Home() {
 
       {/* <!-- ======= Forum Halaman Utama ======= --> */}
       <section>
-        <div class="container col-xxl-8 px-4 py-3">
+        <div class="forrum container col-xxl-8 px-4 py-3">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-12 col-sm-8 col-lg-6">
               <img src={ilustrasiForum} class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500" loading="lazy" />
@@ -110,7 +110,7 @@ function Home() {
               <h2 class="display-5 fw-bold lh-1 mb-3 text-sm-start text-center">Forum Diskusi</h2>
               <p class="lead">Tanyakan pada komunitas kami. Bergabung dalam diskusi dan ajukan pertanyaan di forum Study Tools kami.</p>
               <div class="mt-3 d-grid d-md-flex justify-content-md-start">
-                <a href="/forum" class="btn btn-primary btn-lg rounded-pill shadow fw-bold">Forum</a>
+                <a href="/forum" class="btn btn-primary btn-lg rounded-pill shadow fw-bold d-flex justify-content-center align-items-center">Forum</a>
               </div>
             </div>
           </div>

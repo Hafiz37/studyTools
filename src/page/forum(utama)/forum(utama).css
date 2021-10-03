@@ -11,6 +11,10 @@
 	border-radius: 10px;
 }
 
+.forumDanLeaderboard .btn-tanyaYuk, .forumDanLeaderboard .btn-lebihBanyak{
+	background-color:#7827E6;
+}
+
 /* form .searchForum {
 	width: 57.5%;
 	height: 40px;
