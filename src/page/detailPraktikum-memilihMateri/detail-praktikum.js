@@ -37,7 +37,7 @@ function DetailPraktikum() {
               <div class="col-8">: Li-Ion 3000 mAh, non-removable</div>
             </div>
             <div className="my-3 d-flex flex-column flex-lg-row align-items-center justify-content-lg-around">
-              <a href="/memilihPraktikum/DetailPraktikum/Modul">
+              <a href="/ModulA5step1">
                 <button class="btnBukaMateri btn rounded-pill text-white fw-bold mb-2 mb-lg-0">
                   Buka Materi
                 </button>
@@ -67,7 +67,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 1. </h4>
             <h4> Perkenalan Komponen </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="#">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -78,7 +78,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 2. </h4>
             <h4> Langkah Pertama </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step1">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -89,7 +89,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 3. </h4>
             <h4> Langkah Kedua </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step2">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -100,7 +100,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 4. </h4>
             <h4> Langkah Ketiga </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step3">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -111,7 +111,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 5. </h4>
             <h4> Langkah Keempat </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step4">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -122,7 +122,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 6. </h4>
             <h4> Langkah Kelima </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step5">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -133,7 +133,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 7. </h4>
             <h4> Langkah Keenam </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step6">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -144,7 +144,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 8. </h4>
             <h4> Langkah Ketujuh </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step7">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>
@@ -155,7 +155,7 @@ function DetailPraktikum() {
             <h4 class="me-3"> 9. </h4>
             <h4> Langkah Kedelapan </h4>
           </div>
-          <a href="/memilihPraktikum/DetailPraktikum/Modul">
+          <a href="/ModulA5step8">
             <button type="button" class="btn rounded-pill fw-bold mt-3 mt-md-0">
               Buka
             </button>

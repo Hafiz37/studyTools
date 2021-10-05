@@ -12,6 +12,12 @@
 	width: 360px;
 	margin: 20px 0;
 }
+.containerLogIn{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
 
 .containerLogIn .login-content h3.title{
     font-size: 28px;
@@ -99,7 +105,7 @@
 .login-content label>span {
 	font-weight: bold;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 80%);
 }

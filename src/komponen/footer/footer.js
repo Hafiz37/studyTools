@@ -8,7 +8,7 @@ function Footer() {
             <footer className="text-white text-center text-md-start">
                 <div className="container p-4">
                 <div className="row">
-                    <a href="/" className="text-white col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <a href="/home" className="text-white col-lg-6 col-md-12 mb-4 mb-md-0">
                         <img src={Logo} alt="" width="308px" className="logo mb-4" />
                         <p>Belajar dimanapun, kapanpun dan siapapun</p>
                     </a>
@@ -18,10 +18,10 @@ function Footer() {
 
                         <ul className="list-unstyled">
                         <li>
-                            <a href="/" className="text-white">Home</a>
+                            <a href="/home" className="text-white">Home</a>
                         </li>
                         <li>
-                            <a href="/" className="text-white">Team</a>
+                            <a href="/home" className="text-white">Team</a>
                         </li>
                         <li>
                             <a href="/memilihPraktikum" className="text-white">Materi</a>
@@ -45,7 +45,7 @@ function Footer() {
                 </div>
 
                 <div className="copyright text-center p-3" >
-                    © 2021 Copyright <a className="text-white" href="/">StudyTools</a>. All Rights Reserved.
+                    © 2021 Copyright <a className="text-white" href="/home">StudyTools</a>. All Rights Reserved.
                 </div>
             </footer>
     )

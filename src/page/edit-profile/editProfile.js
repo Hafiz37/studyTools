@@ -2,15 +2,16 @@ import React from 'react'
 import './editProfile.css'
 import logo from '../../logo-ST/logo.png'
 import defaultProfile from './default-photo-profile.jpg'
+import Navbar from '../../komponen/navbar/navbar'
 
 function EditProfile() {
-    let mouseEnterFoto = () =>{
-        alert('hello')
-    }
-    return (
-        <div>
-
-            <div className="containerLogIn">
+  let mouseEnterFoto = () => {
+    alert('hello')
+  }
+  return (
+    <div>
+      <Navbar />
+      <div className="containerLogIn my-3">
         <div className="login-content">
           <form action="index.html" >
             <img src={logo} />
@@ -33,29 +34,29 @@ function EditProfile() {
             </div>
 
             <input type="date" />
-  
+
             <div className="kelammin gap-5">
-                <input type="radio" name="payment" id="lklk" checked />
-                <label for="lklk">
-                    <i className="fa bi-file-person-fill" aria-hidden="true"></i>
-                    <span className="fs-6">laki.laki</span>
-                </label>
-                <input type="radio" name="payment" id="prmpn" />
-                <label for="prmpn">
-                    <i className="fa bi-file-person" aria-hidden="true"></i>
-                    <span className="fs-6">perempuan</span>
-                </label> 
+              <input type="radio" name="payment" id="lklk" checked />
+              <label for="lklk">
+                <i className="fa bi-file-person-fill" aria-hidden="true"></i>
+                <span className="fs-6">laki.laki</span>
+              </label>
+              <input type="radio" name="payment" id="prmpn" />
+              <label for="prmpn">
+                <i className="fa bi-file-person" aria-hidden="true"></i>
+                <span className="fs-6">perempuan</span>
+              </label>
             </div>
 
             <input type="submit" className="btn" value="Simpan" />
           </form>
         </div>
-      </div> 
+      </div>
 
 
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default EditProfile

@@ -9,7 +9,7 @@ function Login() {
 		<div>
 			<div id="loginPage">
 				<img class="wave-login" src={BgIlustrasi} />
-				<div class="containerLogIn">
+				<div class="containerLogIn mt-5">
 					<div class="img">
 						<img src={Ilustrasi1} />
 					</div>
