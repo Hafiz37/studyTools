@@ -7,7 +7,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-1" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 1
+            Memasang Fingerprint
           </button>
         </h2>
         <div id="step-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -19,7 +19,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-2" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 2
+            Memasang Button Home & back
           </button>
         </h2>
         <div id="step-2" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -29,7 +29,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-3" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 3
+            Memasang Octa
           </button>
         </h2>
         <div id="step-3" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -39,7 +39,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-4" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 4
+            Memasang Main Cam
           </button>
         </h2>
         <div id="step-4" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -49,7 +49,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-5" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 5
+            Hubungkan Main Cam
           </button>
         </h2>
         <div id="step-5" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -59,7 +59,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-6" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 6
+            Memasang Front Cam
           </button>
         </h2>
         <div id="step-6" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -69,7 +69,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-7" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 7
+            Hubungkan Front Cam
           </button>
         </h2>
         <div id="step-7" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -79,7 +79,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-8" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 8
+            Memasang RCV
           </button>
         </h2>
         <div id="step-8" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -89,7 +89,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-9" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 9
+              LANGKAH 9
           </button>
         </h2>
         <div id="step-9" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -99,7 +99,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-10" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 10
+            Memasang BPA
           </button>
         </h2>
         <div id="step-10" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -109,7 +109,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-11" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 11
+            Memasang Kabel
           </button>
         </h2>
         <div id="step-11" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -119,7 +119,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-12" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 12
+            Memasang Power Key
           </button>
         </h2>
         <div id="step-12" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -129,7 +129,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-13" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 13
+            Memasang Power Key 2
           </button>
         </h2>
         <div id="step-13" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -139,7 +139,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-14" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 14
+            Hubungan Power Key
           </button>
         </h2>
         <div id="step-14" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -149,7 +149,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-15" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 15
+            Memasang Volume Key 
           </button>
         </h2>
         <div id="step-15" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -159,7 +159,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-16" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 16
+            Memasang Volume Key 2
           </button>
         </h2>
         <div id="step-16" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -169,7 +169,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-17" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 17
+            Hubungkan Volume Key 
           </button>
         </h2>
         <div id="step-17" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -179,7 +179,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-18" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 18
+            Memasang Viberator
           </button>
         </h2>
         <div id="step-18" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -189,7 +189,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-19" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 19
+            Memasang earjact
           </button>
         </h2>
         <div id="step-19" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -199,7 +199,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-20" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 20
+            Hubungkan Earjact
           </button>
         </h2>
         <div id="step-20" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -209,7 +209,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-21" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 21
+            Memasang Battery
           </button>
         </h2>
         <div id="step-21" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -219,7 +219,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-22" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 22
+            Hubungkan Battery
           </button>
         </h2>
         <div id="step-22" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -229,7 +229,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-23" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 23
+            Memasang NFC/MST
           </button>
         </h2>
         <div id="step-23" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -239,7 +239,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-24" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 24
+            Memasang Casing
           </button>
         </h2>
         <div id="step-24" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -249,7 +249,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-25" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 25
+            Memasang Sim Card
           </button>
         </h2>
         <div id="step-25" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
@@ -259,7 +259,7 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-26" aria-expanded="false" aria-controls="flush-collapseOne">
-            Langkah 26
+            Memasang Sim Card & SD Card
           </button>
         </h2>
         <div id="step-26" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
