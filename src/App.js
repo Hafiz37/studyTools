@@ -1,13 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-// import LogoBiru from "./logo-ST/logo-biru.png"
-// import profilePic from '../src/komponen/navbar/default-photo-profile.jpg';
 
-// import logo from './logo.svg';
 import './App.css';
-// import Navbar from "./komponen/navbar/navbar"
 import Footer from "./komponen/footer/footer"
-// import Leaderboard from './komponen/leaderbord/leaderboard';
 
 // halaman
 import HomePage from "./page/home/home"
@@ -20,67 +15,52 @@ import ProfilePage from "./page/profile-page/profile-page"
 import LandingPage from "./page/landing-page/landing-page"
 import MemilihPraktikum from "./page/memilih-praktikum/memilih-praktikum"
 import DetailPraktikum from "./page/detailPraktikum-memilihMateri/detail-praktikum";
-import ModulPraktikum from "./page/modul-praktikum/modulPraktikum";
+// import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
+import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
+import ModulPraktikumA5Step2 from "./page/modul-praktikum/SamsungA5/modulStep2";
+import ModulPraktikumA5Step3 from "./page/modul-praktikum/SamsungA5/modulStep3";
+import ModulPraktikumA5Step4 from "./page/modul-praktikum/SamsungA5/modulStep4";
+import ModulPraktikumA5Step5 from "./page/modul-praktikum/SamsungA5/modulStep5";
+import ModulPraktikumA5Step6 from "./page/modul-praktikum/SamsungA5/modulStep6";
+import ModulPraktikumA5Step7 from "./page/modul-praktikum/SamsungA5/modulStep7";
+import ModulPraktikumA5Step8 from "./page/modul-praktikum/SamsungA5/modulStep8";
+import ModulPraktikumA5Step9 from "./page/modul-praktikum/SamsungA5/modulStep9";
+import ModulPraktikumA5Step10 from "./page/modul-praktikum/SamsungA5/modulStep10";
+import ModulPraktikumA5Step11a from "./page/modul-praktikum/SamsungA5/modulStep11a";
+import ModulPraktikumA5Step11b from "./page/modul-praktikum/SamsungA5/modulStep11b";
+import ModulPraktikumA5Step11c from "./page/modul-praktikum/SamsungA5/modulStep11c";
+import ModulPraktikumA5Step11d from "./page/modul-praktikum/SamsungA5/modulStep11d";
+import ModulPraktikumA5Step12 from "./page/modul-praktikum/SamsungA5/modulStep12";
+import ModulPraktikumA5Step13 from "./page/modul-praktikum/SamsungA5/modulStep13";
+import ModulPraktikumA5Step14 from "./page/modul-praktikum/SamsungA5/modulStep14";
+import ModulPraktikumA5Step15 from "./page/modul-praktikum/SamsungA5/modulStep15";
+import ModulPraktikumA5Step16 from "./page/modul-praktikum/SamsungA5/modulStep16";
+import ModulPraktikumA5Step17 from "./page/modul-praktikum/SamsungA5/modulStep17";
+import ModulPraktikumA5Step18 from "./page/modul-praktikum/SamsungA5/modulStep18";
+import ModulPraktikumA5Step19 from "./page/modul-praktikum/SamsungA5/modulStep19";
+import ModulPraktikumA5Step20 from "./page/modul-praktikum/SamsungA5/modulStep20";
+import ModulPraktikumA5Step21 from "./page/modul-praktikum/SamsungA5/modulStep21";
+import ModulPraktikumA5Step22 from "./page/modul-praktikum/SamsungA5/modulStep22";
+import ModulPraktikumA5Step23 from "./page/modul-praktikum/SamsungA5/modulStep23";
+import ModulPraktikumA5Step24 from "./page/modul-praktikum/SamsungA5/modulStep24";
+import ModulPraktikumA5Step25 from "./page/modul-praktikum/SamsungA5/modulStep25";
+import ModulPraktikumA5Step26 from "./page/modul-praktikum/SamsungA5/modulStep26";
+import ModulPraktikumA5Step27 from "./page/modul-praktikum/SamsungA5/modulStep27";
 import Kursus from "./page/kursus/kursus";
+import EditProfile from "./page/edit-profile/editProfile";
+import SignUp from "./page/signUp-page/signUp";
+import DataPribadi from "./page/form-dataPribadi/dataPribadi";
+import Home from "./page/home/home";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <nav className="navbar navbar-expand-md navbar-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/"><Link to="/home">
-              <img src={LogoBiru} height="24" alt="" />
-            </Link></a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <ul className="navbar-nav align-items-center">
-                <li className="nav-item">
-                  <Link to="/modul"><a className="nav-link active" aria-current="page" href="hlmn-home.html">Modul</a> </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/home"><a className="nav-link active" aria-current="page" href="hlmn-home.html">Home</a> </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/forum"><a className="nav-link" href="hlmn-forum(utama).html">Forum</a></Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/ourTeam"><a className="nav-link" href="#ourTeam">Team</a></Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/memilihPraktikum"><a className="nav-link" href="hlmn-memilih_device.html">Materi</a></Link>
-                </li>
-                <li className="nav-item me-3 me-lg-0">
-                  <a className="nav-link" href="Kursus">
-                    <span><i className="bi bi-cart"></i></span>
-                    <sup><span className="badge badge-pill bg-danger">1</span></sup>
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle d-flex align-items-center" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src={profilePic} className="rounded-circle me-2" height="25" width="25" alt="" loading="lazy" />
-                    M. Nasrullah
-                  </a>
-                  <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><Link to="/profile"><a className="dropdown-item" href="hmln-profile.html"><i className="bi bi-person"></i> Profile</a></Link></li>
-                    <li><Link to="/"><a className="dropdown-item" href="LandingPagee"><i className="bi bi-box-arrow-right"></i> Keluar</a></Link></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            </div>
-          </nav> */}
-        {/* <Navbar/> */}
 
         <Switch>
           <Route path="/forum/DetailPertanyaan/Jawab">
             <JwbPertanyaanForum />
-          </Route>
-          <Route path="/memilihPraktikum/DetailPraktikum/Modul">
-            <ModulPraktikum />
           </Route>
           <Route path="/forum/DetailPertanyaan">
             <DetailPertanyaan />
@@ -88,11 +68,14 @@ function App() {
           <Route path="/forum/TanyaPertanyaan">
             <TanyaPertanyaan />
           </Route>
-        <Route path="/memilihPraktikum/DetailPraktikum">
-          <DetailPraktikum />
-        </Route>
+          <Route path="/memilihPraktikum/DetailPraktikum">
+            <DetailPraktikum />
+          </Route>
           <Route path="/home">
             <HomePage />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
           </Route>
           <Route path="/forum">
             <ForumUtama />
@@ -109,6 +92,113 @@ function App() {
           <Route path="/Login">
             <LoginPage />
           </Route>
+          {/* // -- modul pengerjaan */}
+          <Route path="/ModulA5step1">
+            <ModulPraktikumA5Step1 />
+          </Route>
+          <Route path="/ModulA5step2">
+            <ModulPraktikumA5Step2 />
+          </Route>
+          <Route path="/ModulA5step3">
+            <ModulPraktikumA5Step3 />
+          </Route>
+          <Route path="/ModulA5step4">
+            <ModulPraktikumA5Step4 />
+          </Route>
+          <Route path="/ModulA5step5">
+            <ModulPraktikumA5Step5 />
+          </Route>
+          <Route path="/ModulA5step6">
+            <ModulPraktikumA5Step6 />
+          </Route>
+          <Route path="/ModulA5step7">
+            <ModulPraktikumA5Step7 />
+          </Route>
+          <Route path="/ModulA5step8">
+            <ModulPraktikumA5Step8 />
+          </Route>
+          <Route path="/ModulA5step9">
+            <ModulPraktikumA5Step9 />
+          </Route>
+          <Route path="/ModulA5step10">
+            <ModulPraktikumA5Step10 />
+          </Route>
+          <Route path="/ModulA5step11a">
+            <ModulPraktikumA5Step11a />
+          </Route>
+          <Route path="/ModulA5step11b">
+            <ModulPraktikumA5Step11b />
+          </Route>
+          <Route path="/ModulA5step11c">
+            <ModulPraktikumA5Step11c />
+          </Route>
+          <Route path="/ModulA5step11d">
+            <ModulPraktikumA5Step11d />
+          </Route>
+          <Route path="/ModulA5step12">
+            <ModulPraktikumA5Step12 />
+          </Route>
+          <Route path="/ModulA5step13">
+            <ModulPraktikumA5Step13 />
+          </Route>
+          <Route path="/ModulA5step13">
+            <ModulPraktikumA5Step13 />
+          </Route>
+          <Route path="/ModulA5step14">
+            <ModulPraktikumA5Step14 />
+          </Route>
+          <Route path="/ModulA5step15">
+            <ModulPraktikumA5Step15 />
+          </Route>
+          <Route path="/ModulA5step16">
+            <ModulPraktikumA5Step16 />
+          </Route>
+          <Route path="/ModulA5step17">
+            <ModulPraktikumA5Step17 />
+          </Route>
+          <Route path="/ModulA5step18">
+            <ModulPraktikumA5Step18 />
+          </Route>
+          <Route path="/ModulA5step19">
+            <ModulPraktikumA5Step19 />
+          </Route>
+          <Route path="/ModulA5step20">
+            <ModulPraktikumA5Step20 />
+          </Route>
+          <Route path="/ModulA5step21">
+            <ModulPraktikumA5Step21 />
+          </Route>
+          <Route path="/ModulA5step22">
+            <ModulPraktikumA5Step22 />
+          </Route>
+          <Route path="/ModulA5step23">
+            <ModulPraktikumA5Step23 />
+          </Route>
+          <Route path="/ModulA5step24">
+            <ModulPraktikumA5Step24 />
+          </Route>
+          <Route path="/ModulA5step25">
+            <ModulPraktikumA5Step25 />
+          </Route>
+          <Route path="/ModulA5step26">
+            <ModulPraktikumA5Step26 />
+          </Route>
+          <Route path="/ModulA5step27">
+            <ModulPraktikumA5Step27 />
+          </Route>
+          // ------------------
+          <Route path="/Jawab">
+            <JwbPertanyaanForum />
+          </Route>
+          <Route path="/edit-profile">
+            <EditProfile />
+          </Route>
+          <Route path="/data-pribadi">
+            <DataPribadi />
+          </Route>
+          <Route path="/DetailPertanyaan">
+            <DetailPertanyaan />
+          </Route>
           <Route path="/Kursus">
             <Kursus />
           </Route>
@@ -117,10 +207,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
-
-                    {/* <LoginPage />  */}
-
 
       <Footer />
     </div>
