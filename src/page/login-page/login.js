@@ -38,20 +38,24 @@ function Login() {
 
 const [email, setEmail] = useState()
 const [password, setPassword] = useState()
-
+	
 
 let api = () => {
-	const parameter ='?credential='+String(email)+String(password);
-	console.log(parameter)
-	fetch("https://615eb2583d1491001755aa76.mockapi.io/users" + parameter)
+	const parameter = email + password;
+	console.log(parameter)	
+	fetch("https://615eb2583d1491001755aa76.mockapi.io/users/" + parameter)
 	.then(respons => respons.json())
 	.then((result) => {
 
-		console.log(result)
-
+		if(result.email){
+			window.location.replace("/home");	
+		}else{
+			alert('login gagal')
+		}
 
 	})
 }
+
 
 
 
@@ -87,7 +91,7 @@ let api = () => {
 								</div>
 							</div>
 							<a href="#">Forgot Password?</a>
-							<a href="/home"><button type="button" class="btn" value="Login" onClick={api} >LogIn</button></a>
+							<button type="button" class="btn" value="Login" onClick={api} >LogIn</button>
 						</form>
 					</div>
 				</div>

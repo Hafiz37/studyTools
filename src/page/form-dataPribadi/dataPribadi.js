@@ -12,6 +12,13 @@ function DataPribadi() {
 
 
 
+  // const foto nama tanggal lahir, kelamin
+  const [foto, setFoto] = useState()
+  const [nama, setNama] = useState()
+  const [lahir, setLahir] = useState()
+  const [gender, setGender] = useState()
+
+
   
 
 const imgDiv = useRef()
@@ -29,6 +36,7 @@ let changePhoto = () => {
    
     // this refers to file
     const choosedFile = this.files[0];
+console.log(file)
 
     if (choosedFile) {
 
@@ -90,7 +98,7 @@ let changePhoto = () => {
               </div>
               <div class="div">
                 <h5>Nama</h5>
-                <input type="email" class="input" />
+                <input type="text" class="input" onChange={ (evnt) => setNama(evnt.target.value) } value={nama} />
               </div>
             </div>
 
