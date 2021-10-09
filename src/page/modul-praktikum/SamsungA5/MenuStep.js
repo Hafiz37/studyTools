@@ -89,11 +89,11 @@ function MenuStep() {
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-2">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-9" aria-expanded="false" aria-controls="flush-collapseOne">
-              LANGKAH 9
+              Memasang proximity
           </button>
         </h2>
         <div id="step-9" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body lh-base fs-6">ambil komponen-2, lalu pasangkan di bagian atas dari bingkai.</div>
+          <div class="accordion-body lh-base fs-6">ambil proximity(sensor cahaya), lalu pasangkan di bagian atas dari bingkai.</div>
         </div>
       </div>
       <div class="accordion-item">

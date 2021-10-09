@@ -208,7 +208,7 @@ function ModelStep6() {
                 <MenuStep />
               </div>
               <div className="border-top border-2 border-dark my-2 pt-2 text-center">
-                <button className="btn btn-primary w-50 rounded-pill" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
+                <button className="btn fw-bold w-50 rounded-pill text-white" style={{background: '#7827E6'}} data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
               </div>
             </div>
             <div className="col-lg-8 mt-3 mt-lg-0">

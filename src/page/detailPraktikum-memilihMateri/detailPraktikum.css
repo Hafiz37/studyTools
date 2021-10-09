@@ -4,11 +4,13 @@
 
 #memilihMateri-page #conten-header .btnBukaMateri{
   background-color: #7827E6;
+  transition: all 0.25s;
 }
-  
+
 #memilihMateri-page #conten-header .btnBukaMateri:hover{
   color: black !important;
-  background-color: transparent;  
+  background-color: #DCC7F8;  
+  border: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 #memilihMateri-page #conten-header .btn{

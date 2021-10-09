@@ -47,7 +47,8 @@ function signUp() {
                 <input type="password" class="input" />
               </div>
             </div>
-            <a href="/data-pribadi"><input type="submit" class="btn" value="Sign  Up" /></a>
+            <a href="/dataPribadi"> <input type="submit" class="btn" value="Sign  Up" /> </a>
+            <a href="/dataPribadi"> <input type="submit" class="btn" value="Sign  Up" /> </a>
           </form>
         </div>
       </div>

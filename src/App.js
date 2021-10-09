@@ -186,14 +186,14 @@ function App() {
           <Route path="/ModulA5step27">
             <ModulPraktikumA5Step27 />
           </Route>
-          // ------------------
+          {/* // ------------------ */}
           <Route path="/Jawab">
             <JwbPertanyaanForum />
           </Route>
           <Route path="/edit-profile">
             <EditProfile />
           </Route>
-          <Route path="/data-pribadi">
+          <Route path="/dataPribadi">
             <DataPribadi />
           </Route>
           <Route path="/DetailPertanyaan">

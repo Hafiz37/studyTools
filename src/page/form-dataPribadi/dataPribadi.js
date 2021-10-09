@@ -4,47 +4,45 @@ import logo from '../../logo-ST/logo.png'
 import bgLogin from './bg-login.png'
 import ilustrasi from './logo form.png'
 import defaultProfile from './default-photo-profile.jpg'
-import {useState, useEffect} from "react";
-import {useRef} from 'react'
+import {useState, useEffect, useRef} from 'react'
+
 
 
 function DataPribadi() {
 
 
+
   
-// input foto profil di form pendaftran
 
+const imgDiv = useRef()
+const img = useRef()
+const file = useRef()
+const uploadBtn = useRef()
 
-// const imgDiv = document.querySelector('.profile-pic-div');
-// const img = document.querySelector('#photo');
-// const file = document.querySelector('#file');
-// const uploadBtn = document.querySelector('#uploadBtn');
-
-
-// const [imgDiv, setImgDiv] = useState()
-// const [img, setImg] = useState()
-// const [file, setFile] = useState()
-// const [uploadBtn, setUploadBtn] = useState()
-
-
-//jika pengguna mengarahkan kursor ke img div 
-
-// imgDiv.addEventListener('mouseenter', function(){
-//     uploadBtn.style.display = "block";
-// });
-
-//jika kita mengarahkan kursor keluar dari img div
-
-// imgDiv.addEventListener('mouseleave', function(){
-//     uploadBtn.style.display = "none";
-// });
-
-
+let mouseHover = () => {
+  uploadBtn.current.style.display = "block";
+}
 
 //ketika memilih foto untuk dikirm
+let changePhoto = () => {
 
+   
+    // this refers to file
+    const choosedFile = this.files[0];
+
+    if (choosedFile) {
+
+        const reader = new FileReader(); 
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+    }
+;
+   
 // file.addEventListener('change', function(){
-    //this refers to file
+//     // this refers to file
 //     const choosedFile = this.files[0];
 
 //     if (choosedFile) {
@@ -58,15 +56,12 @@ function DataPribadi() {
 //         reader.readAsDataURL(choosedFile);
 //     }
 // });
-
+}
 
 // selesai input foto profil di form pendaftran
 
 
-const imgDiv =useRef()
-const img =useRef()
-const file =useRef()
-const uploadBtn =useRef()
+
 
 
 
@@ -83,10 +78,10 @@ const uploadBtn =useRef()
             <img src={logo} />
             <h3 class="title">Ayo isi data pribadi kamu</h3>
 
-            <div class="profile-pic-div" onMouseOver={() => alert('jaja')}>
-              <img src={defaultProfile} id="photo" alt="" />
-              <input type="file" id="file" />
-              <label for="file" id="uploadBtn">choose photo</label>
+            <div class="profile-pic-div" onMouseOutCapture={() => {uploadBtn.current.style.display = "none";}} onMouseOver={mouseHover} ref={imgDiv}>
+              <img src={defaultProfile} id="photo" ref={img} alt="" />
+              <input type="file" id="file" ref={file} onChange={changePhoto} />
+              <label for="file" id="uploadBtn" ref={uploadBtn}>choose photo</label>
           </div>
 
             <div class="input-div one">

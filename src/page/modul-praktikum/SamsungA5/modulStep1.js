@@ -21,16 +21,16 @@ import $ from "jquery";
 import Navbar from "../../../komponen/navbar/navbar";
 
 function ModelStep1() {
-  var putar = 0;
-  var balik = 1;
-  var derajat = 0;
-  var LokasiOK = 0;
+  let putar = 0;
+  let balik = 1;
+  let derajat = 0;
+  let LokasiOK = 0;
   // var lokx = 0;
   // var loky = 0;
 
-  var rotasi_sesuai = 90;
-  var posisi_hadap = 2;
-  var pasang = 0;
+  let rotasi_sesuai = 90;
+  let posisi_hadap = 2;
+  let pasang = 0;
 
   function balikGambar(e) {
     e.preventDefault();
@@ -193,7 +193,7 @@ function ModelStep1() {
                 <MenuStep />
               </div>
               <div className="border-top border-2 border-dark my-2 pt-2 text-center">
-                <button className="btn btn-primary w-50 rounded-pill" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
+                <button className="btn fw-bold w-50 rounded-pill text-white" style={{background: '#7827E6'}} data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
               </div>
             </div>
             <div className="col-lg-8 mt-3 mt-lg-0">
@@ -203,18 +203,18 @@ function ModelStep1() {
                     <img src={hpbelumdirakit} id="device" width="100%" />
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
-                    <img src={komponen3} className="macamKomponen gambar drag-drop" />
-                    <img src={komponena} className="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" />
-                    <img src={komponen15} className="macamKomponen gambar drag-drop" />
-                    <img src={komponen10} className="macamKomponen gambar drag-drop" />
-                    <img src={komponen9} className="macamKomponen gambar drag-drop" />
+                    <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
+                    <img src={komponena} className="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" data-bs-toggle="tooltip" data-bs-placement="top" title="fingerprin(sidik jari)" />
+                    <img src={komponen15} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="okta(layar)" />
+                    <img src={komponen10} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="main cam(kamera belakang)" />
+                    <img src={komponen9} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="front cam(kamera depan)" />
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-2 btn-control">
                   <button className="btn btn-secondary rounded-pill" onClick={putarGambar}><i className="bi bi-arrow-clockwise"></i><span className="d-none d-md-block">&nbsp;Putar</span></button>
                   <button className="btn btn-warning rounded-pill" onClick={balikGambar}><i className="bi bi-arrow-repeat"></i><span className="d-none d-md-block">&nbsp;Balik</span></button>
                   <button className="btn btn-primary rounded-pill" onClick={tempel}><i className="bi bi-clipboard-check"></i><span className="d-none d-md-block">&nbsp;Tempel</span></button>
-                  <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
+                    <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
                 </div>
               </div>
               <div className="forum mt-2 row p-3 border border-dark border-2 rounded-25 mx-1">

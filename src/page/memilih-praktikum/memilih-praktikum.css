@@ -12,6 +12,7 @@
 .macamDevice button{
   background-color: #7827E6;
   color: white;
+  transition: all 0.25s;
 }
 
 .macamDevice button:hover{
