@@ -222,6 +222,7 @@ function ModelStep2() {
           </div>
         </div>
       </section>
+      {/* <img src='https://studytools-assets.000webhostapp.com/perakitan-samsung-galaxy-a5.2017/1/komponen-4-a.png'         /> */}
     </div>
   )
 }
