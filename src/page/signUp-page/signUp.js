@@ -90,7 +90,8 @@ function SignUp() {
                 <input type="password" class="input" onChange={ (evnt) => setConfirmasiPassword(evnt.target.value) } value={confirmasiPassword} />
               </div>
             </div>
-             <input type="submit" class="btn" value="Sign  Up" onClick={pendaftaran} />
+             {/* <input type="submit" class="btn" value="Sign  Up" onClick={pendaftaran} /> */}
+             <button type="button" class="btn" value="Sign Up" onClick={pendaftaran} >SignUp</button>
           </form>
         </div>
       </div>

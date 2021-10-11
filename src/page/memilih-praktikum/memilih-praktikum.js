@@ -14,7 +14,7 @@ function MemilihPraktikum() {
             <Navbar/>
 
             {/* <!-- ======= List Device ======= --> */}
-            <h1 class="fw-bold text-center fs-1 mt-5 mb-5">Pilih alat elektronik yang ingin anda pelajari</h1>
+            <h1 class="fw-bold text-center fs-1 mt-5 mb-5">Pilih praktikum yang ingin anda pelajari</h1>
 
             <section class="p-2 p-sm-5 mb-4">
                 <div class="border rounded-10 border-2 border-dark p-3">

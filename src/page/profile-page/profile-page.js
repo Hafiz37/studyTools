@@ -12,7 +12,7 @@ function ProfilePage() {
             <div className="page-header header-filter" data-parallax="true"></div>
             <div className="profile-content container" >
                 <div className="row" >
-                    <a className="d-flex justify-content-end mt-2"><i className="bi bi-pencil-square fs-2 top-0 absolute"></i></a>
+                    <a href="/edit-profile" className="d-flex justify-content-end mt-2"><i className="bi bi-pencil-square fs-2 top-0 absolute"></i></a>
                     <div className="profile-content-2 col-md-11 text-center">
                         <div className="avatar">
                             <img src={gambarSementara} alt="Circle Image" className="rounded-circle img-fluid" />

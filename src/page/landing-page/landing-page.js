@@ -43,7 +43,7 @@ function LandingPage() {
                 dan bergabunglah dalam forum diskusi kami</h2>
               <div class="d-flex justify-content-center justify-content-lg-start">
                 <div class="getStarted"><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
-                <div class="/signUp"><a href="/signup" class="btn-sign-up scrollto">Sign Up</a></div>
+                <div class="ms-3"><a href="/signup" class="btn-sign-up scrollto">Sign Up</a></div>
               </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">

@@ -43,8 +43,8 @@ function DetailPraktikum() {
                 </button>
               </a>
               <a href="/Kursus">
-                <button className="btn btn-secondary rounded-pill">
-                  <i class="bi bi-bag-plus-fill ms-auto" /> Tambah ke Keranjang
+                <button className="btn btn-secondary fw-bold rounded-pill">
+                  <i class="bi bi-bag-plus-fill ms-auto " /> Tambah ke Kursus
                 </button>
               </a>
             </div>
