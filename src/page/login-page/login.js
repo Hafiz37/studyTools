@@ -10,20 +10,28 @@ function Login() {
 
 	
 // const inputs = document.querySelectorAll(".input");
-// const inputs = useRef()
+const inputs = useRef()
 
 
-// function addcl(){
-// 	let parent = this.parentNode.parentNode;
-// 	parent.classList.add("focus");
-// }
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+	// inputs.current.classList.add('focus')
+	console.log(inputs)
+}
 
-// function remcl(){
-// 	let parent = this.parentNode.parentNode;
-// 	if(this.value == ""){
-// 		parent.classList.remove("focus");
-// 	}
-// }
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+		parent.classList.remove("focus");
+	}
+}
+
+
+// inputs.forEach( (input) => {
+// 	input.addEventListener("focus", addcl);
+// 	input.addEventListener("blur", remcl);
+
 
 
 // inputs.forEach( (input) => {
@@ -62,6 +70,9 @@ let api = () => {
 
 	return (
 		<div>
+
+		
+
 			<div id="loginPage">
 				<img class="wave-login" src={BgIlustrasi} />
 				<div class="containerLogIn mt-5">
@@ -70,6 +81,12 @@ let api = () => {
 					</div>
 					<div class="login-content">
 						<form >
+
+						{/* <div class="form-floating mb-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+							<label for="floatingInput">Email address</label>
+						</div> */}
+
 							<img src={Logo} />
 							<h2 class="title">Masuk sebagai pengguna</h2>
 							<div class="input-div one">
@@ -78,7 +95,7 @@ let api = () => {
 								</div>
 								<div class="div">
 									<h5>Email</h5>
-									<input type="email" className="input" onChange={ (evnt) => setEmail(evnt.target.value) } value={email} />
+									<input type="email" onFocus={addcl} onBlur={remcl} ref={inputs} className="input" onChange={ (evnt) => setEmail(evnt.target.value) } value={email} />
 								</div>
 							</div>
 							<div class="input-div pass">
