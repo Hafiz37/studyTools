@@ -1,10 +1,46 @@
 import React from 'react'
+import {useState} from "react"
+
+
 
 function MenuStep() {
+
+
+  let [materi, setMateri] = useState()
+
+  let api = () => {
+    fetch("https://615eb2583d1491001755aa76.mockapi.io/materi")
+    .then(respons => respons.json())
+    .then((result) => {
+      const row_item = []
+      for (let item of result) {
+        const row = (
+          // WAITT YA KWKWKWKW
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-1" aria-expanded="false" aria-controls="flush-collapseOne">
+            Memasang Fingerprint
+          </button>
+        </h2>
+        <div id="step-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body lh-base fs-6">
+          ambil komponen fingerprint, lalu pasangkan di bagian bawah dari bingkai.
+          </div>
+        </div>
+      </div>
+        );
+        row_item.push(row);
+      }
+      setMateri(row_item)
+    })
+  }
+  api()
+  
+  
   return (
     <div class="accordion accordion-flush" id="accordionFlushExample" style={{ height: 650, "overflow-y": "auto" }}>
-
-      <div class="accordion-item">
+    {materi}
+      {/* <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#step-1" aria-expanded="false" aria-controls="flush-collapseOne">
             Memasang Fingerprint
@@ -265,7 +301,7 @@ function MenuStep() {
         <div id="step-26" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body lh-base fs-6">ambil komponen sim card 2 & sd card, lalu pasangkan di bagian samping  bingkai.</div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

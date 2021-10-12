@@ -1,4 +1,7 @@
 import "../modulPraktikum.css";
+import {useState} from "react"
+
+
 // --komponen Depan
 import komponena from '../../../../src/komponen/modul-3D/samsung-galaxy-A5-2017/komponen/komponen-4-a.png';
 // --komponen Belakang
@@ -19,6 +22,7 @@ import MenuStep from "./MenuStep";
 import interact from 'interactjs';
 import $ from "jquery";
 import Navbar from "../../../komponen/navbar/navbar";
+import react from "react";
 
 function ModelStep1() {
   let putar = 0;
@@ -167,10 +171,35 @@ function ModelStep1() {
     e.preventDefault();
     alert('The link was clicked.');
   }
-  return (
-    <div>
-      <Navbar />
 
+  
+  
+  let [materi, setMateri] = useState()
+  
+  let api = () => {
+    fetch("https://615eb2583d1491001755aa76.mockapi.io/materi")
+    .then(respons => respons.json())
+    .then((result) => {
+      const row_item = []
+      for (let item of result) {
+        const row = (
+          <p>{item.judul}</p>
+        );
+        row_item.push(row);
+      }
+      setMateri(row_item)
+    })
+  }
+api()
+
+
+
+
+return (
+  <div>
+
+      <Navbar />
+      {materi}
       <section id="progresbarPraktek">
         <div className="container mb-3">
           <div className="row d-flex justify-content-center mt-3">

@@ -11,6 +11,9 @@ import carausel3 from "./carausel/carousel-3.jpg"
 import pic1 from '../forum(utama)/pic-1.jpg'
 import pic2 from '../forum(utama)/pic-2.jpg'
 import pic3 from '../forum(utama)/pic-4.jpg'
+import ppHafiz from './ilustrasi/ourTEam/pp-hafiz.jpeg'
+import ppDayinta from './ilustrasi/ourTEam/pp-dayinta.jpeg'
+import ppRahmanda from './ilustrasi/ourTEam/pp-rahmanda.jpeg'
 
 // iluastrasi
 import ilustrasiMulaibelajar from "./ilustrasi/assembly.png"
@@ -194,7 +197,7 @@ function Home() {
       <div class="row ">
         <div class="perOrang mt-0 col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic1} class="card-img-top rounded-circle" alt=" "/>
+            <img src={ppHafiz} class="card-img-top rounded-circle" alt=" "/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Muhammad Hafiz Falah</h3>
               <div class="sosmed d-flex justify-content-center">
@@ -208,7 +211,7 @@ function Home() {
         </div>
         <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic2} class="card-img-top rounded-circle" alt=""/>
+            <img src={ppDayinta} class="card-img-top rounded-circle" alt=""/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Dayinta Ayu Faj'rin</h3>
               <div class="sosmed d-flex justify-content-center">
@@ -222,7 +225,7 @@ function Home() {
         </div>
         <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic3} class="card-img-top rounded-circle" alt=" "/>
+            <img src={ppRahmanda} class="card-img-top rounded-circle" alt=" "/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Rahmanda Dwi Pandega</h3>
               <div class="sosmed d-flex justify-content-center">
