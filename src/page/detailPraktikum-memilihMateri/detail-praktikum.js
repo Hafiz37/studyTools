@@ -13,6 +13,7 @@ function DetailPraktikum() {
         <div class="d-flex flex-column flex-md-row">
           <div class="col-md-8 d-flex flex-column justify-content-between">
             <h5 class="fw-bold fs-2 mb-3">Perakitan Samsung Galaxy A5 2017</h5>
+            {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/t06_rLWAZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
             <div class="row mt-2">
               <div class="col-2">Chipset</div>
               <div class="col-8">: Exynos 7880 (14 nm)</div>
@@ -37,7 +38,7 @@ function DetailPraktikum() {
               <div class="col-8">: Li-Ion 3000 mAh, non-removable</div>
             </div>
             <div className="my-3 d-flex flex-column flex-lg-row align-items-center justify-content-lg-around">
-              <a href="/ModulA5step1">
+              <a href="/Pendahuluan">
                 <button class="btnBukaMateri btn rounded-pill text-white fw-bold mb-2 mb-lg-0">
                   Buka Materi
                 </button>

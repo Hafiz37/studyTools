@@ -14,17 +14,17 @@ const inputs = useRef()
 
 
 function addcl(){
-	let parent = this.parentNode.parentNode;
-	parent.classList.add("focus");
+// 	let parent = this.parentNode.parentNode;
+// 	parent.classList.add("focus");
 	// inputs.current.classList.add('focus')
-	console.log(inputs)
+// 	console.log(inputs)
 }
 
 function remcl(){
-	let parent = this.parentNode.parentNode;
-	if(this.value == ""){
-		parent.classList.remove("focus");
-	}
+// 	let parent = this.parentNode.parentNode;
+// 	if(this.value == ""){
+// 		parent.classList.remove("focus");
+// 	}
 }
 
 

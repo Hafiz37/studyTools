@@ -16,6 +16,7 @@ import LandingPage from "./page/landing-page/landing-page"
 import MemilihPraktikum from "./page/memilih-praktikum/memilih-praktikum"
 import DetailPraktikum from "./page/detailPraktikum-memilihMateri/detail-praktikum";
 // import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
+import Pendahuluan from "./page/modul-praktikum/SamsungA5/pendahuluan";
 import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
 import ModulPraktikumA5Step2 from "./page/modul-praktikum/SamsungA5/modulStep2";
 import ModulPraktikumA5Step3 from "./page/modul-praktikum/SamsungA5/modulStep3";
@@ -93,6 +94,9 @@ function App() {
             <LoginPage />
           </Route>
           {/* // -- modul pengerjaan */}
+          <Route path="/Pendahuluan">
+            <Pendahuluan />
+          </Route>
           <Route path="/ModulA5step1">
             <ModulPraktikumA5Step1 />
           </Route>

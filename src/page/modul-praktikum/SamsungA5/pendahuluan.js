@@ -32,57 +32,57 @@ function ModelStep1() {
   // var lokx = 0;
   // var loky = 0;
 
-  let rotasi_sesuai = 90;
-  let posisi_hadap = 2;
-  let pasang = 0;
+//   let rotasi_sesuai = 90;
+//   let posisi_hadap = 2;
+//   let pasang = 0;
 
-  function balikGambar(e) {
-    e.preventDefault();
-    if (balik === 1) {
-      $("#gambarterpilih").attr("src", komponenb);
-      balik = 2;
-    } else {
-      $("#gambarterpilih").attr("src", komponena);
-      balik = 1;
-    }
-  }
-  function putarGambar(e) {
-    e.preventDefault();
-    if (LokasiOK === 1) {
-      if (putar >= 4) {
-        putar = 1;
-      } else {
-        putar = putar + 1;
-      }
-      derajat = 90 * putar;
-      $('#gambarterpilih').css({
-        "transform": "rotate(" + derajat + "deg)"
-      });
-      // alert(derajat);
-    } else {
-      alert("belum Ada Ditempatnya");
-    }
-  }
+//   function balikGambar(e) {
+//     e.preventDefault();
+//     if (balik === 1) {
+//       $("#gambarterpilih").attr("src", komponenb);
+//       balik = 2;
+//     } else {
+//       $("#gambarterpilih").attr("src", komponena);
+//       balik = 1;
+//     }
+//   }
+//   function putarGambar(e) {
+//     e.preventDefault();
+//     if (LokasiOK === 1) {
+//       if (putar >= 4) {
+//         putar = 1;
+//       } else {
+//         putar = putar + 1;
+//       }
+//       derajat = 90 * putar;
+//       $('#gambarterpilih').css({
+//         "transform": "rotate(" + derajat + "deg)"
+//       });
+//       // alert(derajat);
+//     } else {
+//       alert("belum Ada Ditempatnya");
+//     }
+//   }
 
-  function tempel(e) {
-    e.preventDefault();
-    if (LokasiOK === 1 && derajat === rotasi_sesuai && balik === posisi_hadap) {
-      $("#device").attr("src", hpsudahdirakit);
-      $("#gambarterpilih").attr("hidden", "true");
-      $(".btnSimpan").removeAttr("disabled");
-      pasang = 1;
-    } else {
-      alert("Lokasi Komponen Tidak Sesuai");
-    }
-  }
+//   function tempel(e) {
+//     e.preventDefault();
+//     if (LokasiOK === 1 && derajat === rotasi_sesuai && balik === posisi_hadap) {
+//       $("#device").attr("src", hpsudahdirakit);
+//       $("#gambarterpilih").attr("hidden", "true");
+//       $(".btnSimpan").removeAttr("disabled");
+//       pasang = 1;
+//     } else {
+//       alert("Lokasi Komponen Tidak Sesuai");
+//     }
+//   }
   function selanjutnya(e) {
     e.preventDefault();
-    console.log('Lokasi: ' + LokasiOK + ', derajat: ' + derajat + ', rotasi sesuai: ' + rotasi_sesuai + ', balik: ' + balik + ', posisi hadap: ' + posisi_hadap);
-    if (pasang === 1) {
-      window.location.replace("ModulA5step2");
-    } else {
-      alert("Komponen Belum Terpasang");
-    }
+    // console.log('Lokasi: ' + LokasiOK + ', derajat: ' + derajat + ', rotasi sesuai: ' + rotasi_sesuai + ', balik: ' + balik + ', posisi hadap: ' + posisi_hadap);
+    // if (pasang === 1) {
+      window.location.replace("ModulA5step1");
+    // } else {
+    //   alert("Komponen Belum Terpasang");
+    // }
   }
 
   function dragMoveListener(event) {
@@ -228,22 +228,23 @@ return (
             <div className="col-lg-8 mt-3 mt-lg-0">
               <div className="border rounded-25 border-dark border-2 bg-light">
                 <div className="dnd-items">
-                  <div className="dropzone border rounded-25">
-                    <img src={hpbelumdirakit} id="device" width="100%" />
+                  <div className="dropzone border rounded-25 d-flex  align-items-center justify-content-center ">
+                    {/* <img src={hpbelumdirakit} id="device" width="100%" /> */}
                     {/* img diganti iframe */}
+                    <iframe width="560" height="315" id="device" src="https://www.youtube.com/embed/t06_rLWAZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
-                    <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
+                    {/* <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
                     <img src={komponena} className="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" data-bs-toggle="tooltip" data-bs-placement="top" title="fingerprin(sidik jari)" />
                     <img src={komponen15} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="okta(layar)" />
                     <img src={komponen10} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="main cam(kamera belakang)" />
-                    <img src={komponen9} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="front cam(kamera depan)" />
+                    <img src={komponen9} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="front cam(kamera depan)" /> */}
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-2 btn-control">
-                  <button className="btn btn-secondary rounded-pill" onClick={putarGambar}><i className="bi bi-arrow-clockwise"></i><span className="d-none d-md-block">&nbsp;Putar</span></button>
+                  {/* <button className="btn btn-secondary rounded-pill" onClick={putarGambar}><i className="bi bi-arrow-clockwise"></i><span className="d-none d-md-block">&nbsp;Putar</span></button>
                   <button className="btn btn-warning rounded-pill" onClick={balikGambar}><i className="bi bi-arrow-repeat"></i><span className="d-none d-md-block">&nbsp;Balik</span></button>
-                  <button className="btn btn-primary rounded-pill" onClick={tempel}><i className="bi bi-clipboard-check"></i><span className="d-none d-md-block">&nbsp;Tempel</span></button>
+                  <button className="btn btn-primary rounded-pill" onClick={tempel}><i className="bi bi-clipboard-check"></i><span className="d-none d-md-block">&nbsp;Tempel</span></button> */}
                     <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
                 </div>
               </div>
