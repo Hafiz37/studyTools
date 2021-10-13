@@ -8,6 +8,10 @@ import logoBiru from "../../logo-ST/logo-biru.png"
 import pic1 from '../forum(utama)/pic-1.jpg'
 import pic2 from '../forum(utama)/pic-2.jpg'
 import pic3 from '../forum(utama)/pic-4.jpg'
+import ppHafiz from './ilustrasi/ourTEam/pp-hafiz.jpeg'
+import ppDayinta from './ilustrasi/ourTEam/pp-dayinta.jpeg'
+import ppRahmanda from './ilustrasi/ourTEam/pp-rahmanda.jpeg'
+
 
 // iluastrasi
 import ilustrasiMulaibelajar from "./ilustrasi/assembly.png"
@@ -76,11 +80,11 @@ function LandingPage() {
           </div>
           <div class="baris3 mt-3 row text-center">
             <div class="dalam col-md d-flex align-items-center mb-3">
-              <i class="icon bi bi-geo-alt-fill fs-5 me-3 p-3 rounded-circle"></i>
+              <i class="icon bi bi-clock fs-5 me-3 p-3 rounded-circle"></i>
               <h3 class="fs-4">Belajar kapanpun</h3>
             </div>
             <div class="dalam col-md d-flex align-items-center mb-3">
-              <i class="icon bi bi-clock fs-5 me-3 p-3 rounded-circle"></i>
+              <i class="icon bi bi-geo-alt-fill fs-5 me-3 p-3 rounded-circle"></i>
               <h3 class="fs-4">Belajar dimanapun</h3>
             </div>
             <div class="dalam col-md d-flex align-items-center mb-3">
@@ -206,7 +210,7 @@ function LandingPage() {
       <div class="row ">
         <div class="perOrang mt-0 col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic1} class="card-img-top rounded-circle" alt=" "/>
+            <img src={ppHafiz} class="card-img-top rounded-circle" alt=" "/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Muhammad Hafiz Falah</h3>
               <div class="sosmed d-flex justify-content-center">
@@ -220,7 +224,7 @@ function LandingPage() {
         </div>
         <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic2} class="card-img-top rounded-circle" alt=""/>
+            <img src={ppDayinta} class="card-img-top rounded-circle" alt=""/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Dayinta Ayu Faj'rin</h3>
               <div class="sosmed d-flex justify-content-center">
@@ -234,7 +238,7 @@ function LandingPage() {
         </div>
         <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
           <div class="cardd d-flex flex-column">
-            <img src={pic3} class="card-img-top rounded-circle" alt=" "/>
+            <img src={ppRahmanda} class="card-img-top rounded-circle" alt=" "/>
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Rahmanda Dwi Pandega</h3>
               <div class="sosmed d-flex justify-content-center">

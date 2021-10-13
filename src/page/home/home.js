@@ -67,11 +67,11 @@ function Home() {
           </div>
           <div class="baris3 mt-3 row text-center">
             <div class="dalam col-md d-flex align-items-center mb-3">
-              <i class="icon bi bi-geo-alt-fill fs-5 me-3 p-3 rounded-circle"></i>
+              <i class="icon bi bi-clock fs-5 me-3 p-3 rounded-circle"></i>
               <h3 class="fs-4">Belajar kapanpun</h3>
             </div>
             <div class="dalam col-md d-flex align-items-center mb-3">
-              <i class="icon bi bi-clock fs-5 me-3 p-3 rounded-circle"></i>
+              <i class="icon bi bi-geo-alt-fill fs-5 me-3 p-3 rounded-circle"></i>
               <h3 class="fs-4">Belajar dimanapun</h3>
             </div>
             <div class="dalam col-md d-flex align-items-center mb-3">
