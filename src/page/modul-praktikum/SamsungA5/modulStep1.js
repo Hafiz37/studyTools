@@ -45,6 +45,7 @@ function ModelStep1() {
       $("#gambarterpilih").attr("src", komponena);
       balik = 1;
     }
+
   }
   function putarGambar(e) {
     e.preventDefault();
