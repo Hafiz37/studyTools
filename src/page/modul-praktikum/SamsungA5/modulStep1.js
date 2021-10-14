@@ -1,5 +1,6 @@
 import "../modulPraktikum.css";
-import {useState} from "react"
+import { useState, useEffect } from "react"
+import { Accordion, Button } from 'react-bootstrap';
 
 
 // --komponen Depan
@@ -45,8 +46,8 @@ function ModelStep1() {
       $("#gambarterpilih").attr("src", komponena);
       balik = 1;
     }
-
   }
+
   function putarGambar(e) {
     e.preventDefault();
     if (LokasiOK === 1) {
@@ -68,7 +69,7 @@ function ModelStep1() {
   function tempel(e) {
     e.preventDefault();
     if (LokasiOK === 1 && derajat === rotasi_sesuai && balik === posisi_hadap) {
-      $("#device").attr("src", hpsudahdirakit);
+      $("#device").attr("src", casing_hp);
       $("#gambarterpilih").attr("hidden", "true");
       $(".btnSimpan").removeAttr("disabled");
       pasang = 1;
@@ -122,6 +123,7 @@ function ModelStep1() {
       // add active dropzone feedback
       event.target.classList.add('drop-active')
     },
+
     ondragenter: function (event) {
       // alert("lokasi pas");
       var draggableElement = event.relatedTarget
@@ -135,6 +137,7 @@ function ModelStep1() {
       }
       dropzoneElement.classList.add('drop-target')
     },
+
     ondragleave: function (event) {
       LokasiOK = 0;
       // remove the drop feedback style
@@ -142,9 +145,11 @@ function ModelStep1() {
       event.relatedTarget.classList.remove('can-drop')
       event.relatedTarget.classList.remove('no-drop')
     },
+
     ondrop: function (event) {
       event.relatedTarget.textContent = 'Dropped'
     },
+
     ondropdeactivate: function (event) {
       // remove active dropzone feedback
       event.target.classList.remove('drop-active')
@@ -173,34 +178,72 @@ function ModelStep1() {
     alert('The link was clicked.');
   }
 
-  
-  
-//   let [materi, setMateri] = useState()
-  
-//   let api = () => {
-//     fetch("https://615eb2583d1491001755aa76.mockapi.io/materi")
-//     .then(respons => respons.json())
-//     .then((result) => {
-//       const row_item = []
-//       for (let item of result) {
-//         const row = (
-//           <p>{item.judul}</p>
-//         );
-//         row_item.push(row);
-//       }
-//       setMateri(row_item)
-//     })
-//   }
-// api()
+  // Ambil Materi dari server
+  let [materi, setMateri] = useState()
+  let [materiDipilih, setMateriDipilih] = useState()
+  let [casing_hp, setCasing] = useState()
+  let [komponen, setKomponen] = useState()
 
+  function setMateriData(materi, daftar_materi) {
+    setMateriDipilih(materi)
+    setCasing(materi.casing_sebelum_terpasang)
 
+    let id_sekarang = materi.id - 1;
+    console.log(materiDipilih)
+    const row_list = []
+    for (id_sekarang; id_sekarang <= daftar_materi.length; id_sekarang++) {
+      try{
+        const komponen_sekarang = daftar_materi[id_sekarang].komponen_tampak_depan
+        let row = (<img src={komponen_sekarang} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip"  data-bs-placement="top" />)
+        if(materi.id == daftar_materi[id_sekarang].id){
+           row = (
+            <img src={komponen_sekarang} id="gambarterpilih" status="terpilih" className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip"  data-bs-placement="top" />
+          )
+        }
+        console.log(id_sekarang)
+        row_list.push(row)
+      }
+      catch{}
+    }
+    setKomponen(row_list)
+  }
 
+  let api = () => {
+    fetch("https://615eb2583d1491001755aa76.mockapi.io/materi")
+      .then(respons => respons.json())
+      .then((result) => {
+        const row_item = []
+        for (let item of result) {
+          const row = (
+            <Accordion.Item eventKey={item.id}>
+              <Accordion.Header>
+                <span class="fw-bold fs-5" type="button">
+                  {item.judul}
+                </span>
+              </Accordion.Header>
+              <Accordion.Body>
+                <div class="lh-base fs-6">
+                  {item.deskripsi}<br />
+                  <Button className="mt-2"
+                    onClick={() => setMateriData(item, result)}>Mulai</Button>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+          );
+          row_item.push(row);
+        }
+        setMateri(row_item)
+      })
+  }
 
-return (
-  <div>
+  useEffect(() => {
+    api();
+  }, []);
+
+  return (
+    <div>
 
       <Navbar />
-      {/* {materi} */}
       <section id="progresbarPraktek">
         <div className="container mb-3">
           <div className="row d-flex justify-content-center mt-3">
@@ -212,7 +255,6 @@ return (
           </div>
         </div>
       </section>
-
       <section className="container">
         <div className="row praktek rounded-25 shadow border pe-0 pe-lg-2">
           <h1 className="fw-bold fs-1 mt-4 ms-1 mb-5 mt-4">Perakitan Samsung A5 2017</h1>
@@ -220,20 +262,25 @@ return (
             <div className="col-lg-4 border border-dark rounded-25 bg-light me-0 me-lg-2 d-flex flex-column justify-content-between">
               <div>
                 <h2 className="belajarYuk text-center fs-6 fw-bold d-flex justify-content-center align-items-center text-light">Belajar yuk</h2>
-                <MenuStep />
+                <div class="accordion accordion-flush" id="accordionFlushExample" style={{ height: 650, "overflow-y": "auto" }}>
+                  <Accordion defaultActiveKey="0">
+                    {materi}
+                  </Accordion>
+                </div>
               </div>
               <div className="border-top border-2 border-dark my-2 pt-2 text-center">
-                <button className="btn fw-bold w-50 rounded-pill text-white" style={{background: '#7827E6'}} data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
+                <button className="btn fw-bold w-50 rounded-pill text-white" style={{ background: '#7827E6' }} data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tombol kirim hanya bisa digunakan jika tantangan sudah selesai semua!">Kirim</button>
               </div>
             </div>
             <div className="col-lg-8 mt-3 mt-lg-0">
               <div className="border rounded-25 border-dark border-2 bg-light">
                 <div className="dnd-items">
                   <div className="dropzone border rounded-25">
-                    <img src={hpbelumdirakit} id="device" width="100%" />
+                    <img src={casing_hp} id="device" width="100%" />
                     {/* img diganti iframe */}
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
+                    {komponen}
                     <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
                     <img src={komponena} className="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" data-bs-toggle="tooltip" data-bs-placement="top" title="fingerprin(sidik jari)" />
                     <img src={komponen15} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="okta(layar)" />
@@ -245,7 +292,7 @@ return (
                   <button className="btn btn-secondary rounded-pill" onClick={putarGambar}><i className="bi bi-arrow-clockwise"></i><span className="d-none d-md-block">&nbsp;Putar</span></button>
                   <button className="btn btn-warning rounded-pill" onClick={balikGambar}><i className="bi bi-arrow-repeat"></i><span className="d-none d-md-block">&nbsp;Balik</span></button>
                   <button className="btn btn-primary rounded-pill" onClick={tempel}><i className="bi bi-clipboard-check"></i><span className="d-none d-md-block">&nbsp;Tempel</span></button>
-                    <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
+                  <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
                 </div>
               </div>
               <div className="forum mt-2 row p-3 border border-dark border-2 rounded-25 mx-1">
