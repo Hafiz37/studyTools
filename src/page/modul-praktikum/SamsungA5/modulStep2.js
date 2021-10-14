@@ -201,10 +201,11 @@ function ModelStep2() {
                     <img src={hpbelumdirakit} id="device" width="100%" />
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
-                    <img src={komponena} class="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" />
-                    <img src={komponen15} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen10} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen9} class="macamKomponen gambar drag-drop" />
+                  <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
+                    <img src={komponena} className="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" data-bs-toggle="tooltip" data-bs-placement="top" title="fingerprin(sidik jari)" />
+                    <img src={komponen15} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="okta(layar)" />
+                    <img src={komponen10} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="main cam(kamera belakang)" />
+                    <img src={komponen9} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="front cam(kamera depan)" />
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-2 btn-control">
