@@ -6,6 +6,8 @@ import picJ5 from '../memilih-praktikum/samsung-j5-prime.jpg'
 import picA5 from '../memilih-praktikum/samsung-a5-2017.jpg'
 import picTab from '../memilih-praktikum/samsung-tab-a8.jpg'
 
+import sertifikat from '../../../src/komponen/data/Sertifikat.jpeg'
+
 function Kursus() {
   return (
     <div>
@@ -39,7 +41,9 @@ function Kursus() {
                       </div>
                     </div>
                     <div className="d-flex flex-column justify-content-end">
-                      <button className="btn btn-warning rounded-pill mb-2 fw-bold">Ambil sertifikat <i class="bi bi-trophy ms-3" /></button>
+                      <a href={sertifikat} download>
+                        <button className="btn btn-warning rounded-pill mb-2 fw-bold">Ambil sertifikat <i class="bi bi-trophy ms-3" /></button>
+                      </a>
                       <button className="btn btn-primary rounded-pill fw-bold">Belajar lagi</button>
                     </div>
                   </div>
@@ -96,7 +100,9 @@ function Kursus() {
                       </div>
                     </div>
                     <div className="d-flex flex-column justify-content-end">
-                      <button className="btn btn-warning rounded-pill mb-2 fw-bold">Ambil sertifikat <i class="bi bi-trophy ms-3" /></button>
+                      <a href={sertifikat} download>
+                        <button className="btn btn-warning rounded-pill mb-2 fw-bold">Ambil sertifikat <i class="bi bi-trophy ms-3" /></button>
+                      </a>
                       <button className="btn btn-primary rounded-pill fw-bold">Belajar lagi</button>
                     </div>
                   </div>
