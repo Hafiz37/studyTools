@@ -79,7 +79,7 @@ function ModelStep1() {
     e.preventDefault();
     // console.log('Lokasi: ' + LokasiOK + ', derajat: ' + derajat + ', rotasi sesuai: ' + rotasi_sesuai + ', balik: ' + balik + ', posisi hadap: ' + posisi_hadap);
     // if (pasang === 1) {
-      window.location.replace("ModulA5step1");
+      window.location.replace("ModulA5step1old");
     // } else {
     //   alert("Komponen Belum Terpasang");
     // }
@@ -245,7 +245,7 @@ return (
                   {/* <button className="btn btn-secondary rounded-pill" onClick={putarGambar}><i className="bi bi-arrow-clockwise"></i><span className="d-none d-md-block">&nbsp;Putar</span></button>
                   <button className="btn btn-warning rounded-pill" onClick={balikGambar}><i className="bi bi-arrow-repeat"></i><span className="d-none d-md-block">&nbsp;Balik</span></button>
                   <button className="btn btn-primary rounded-pill" onClick={tempel}><i className="bi bi-clipboard-check"></i><span className="d-none d-md-block">&nbsp;Tempel</span></button> */}
-                    <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Simpan</span></button>
+                    <button className="btn btn-success rounded-pill" onClick={selanjutnya}><i className="bi bi-save2"></i><span className="d-none d-md-block">&nbsp;Lanjut</span></button>
                 </div>
               </div>
               <div className="forum mt-2 row p-3 border border-dark border-2 rounded-25 mx-1">

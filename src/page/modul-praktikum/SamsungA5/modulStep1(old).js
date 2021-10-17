@@ -24,7 +24,7 @@ import $ from "jquery";
 import Navbar from "../../../komponen/navbar/navbar";
 import react from "react";
 
-function ModelStep1() {
+function ModelStep1old() {
 
   //cuma ada di step 1 aja
   localStorage.setItem("PoinSamsungA5", 0);
@@ -272,4 +272,4 @@ function ModelStep1() {
   )
 }
 
-export default ModelStep1
+export default ModelStep1old

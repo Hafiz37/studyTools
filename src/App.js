@@ -18,6 +18,7 @@ import DetailPraktikum from "./page/detailPraktikum-memilihMateri/detail-praktik
 // import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
 import Pendahuluan from "./page/modul-praktikum/SamsungA5/pendahuluan";
 import ModulPraktikumA5Step1 from "./page/modul-praktikum/SamsungA5/modulStep1";
+import ModulPraktikumA5Step1old from "./page/modul-praktikum/SamsungA5/modulStep1(old)";
 import ModulPraktikumA5Step2 from "./page/modul-praktikum/SamsungA5/modulStep2";
 import ModulPraktikumA5Step3 from "./page/modul-praktikum/SamsungA5/modulStep3";
 import ModulPraktikumA5Step4 from "./page/modul-praktikum/SamsungA5/modulStep4";
@@ -99,6 +100,9 @@ function App() {
           </Route>
           <Route path="/ModulA5step1">
             <ModulPraktikumA5Step1 />
+          </Route>
+          <Route path="/ModulA5step1old">
+            <ModulPraktikumA5Step1old />
           </Route>
           <Route path="/ModulA5step2">
             <ModulPraktikumA5Step2 />
