@@ -28,8 +28,8 @@ function EditProfile() {
                 <i className="fas bi-person-fill"></i>
               </div>
               <div className="div">
-                <h5>Nama</h5>
-                <input type="email" className="input" />
+                {/* <h5>Nama</h5> */}
+                <input type="text" className="input" placeholder="Nama"/>
               </div>
             </div>
 

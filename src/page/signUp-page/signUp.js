@@ -42,7 +42,7 @@ function SignUp() {
       .then(respons => respons.json())
       .then((result) => {
         alert('daftar berhasil')
-        window.location.replace("/login");
+        window.location.replace("/dataPribadi");
       })
 
 

@@ -97,8 +97,8 @@ console.log(file)
                 <i class="fas bi-person-fill"></i>
               </div>
               <div class="div">
-                <h5>Nama</h5>
-                <input type="text" class="input" onChange={ (evnt) => setNama(evnt.target.value) } value={nama} />
+                {/* <h5>Nama</h5> */}
+                <input type="text" class="input" onChange={ (evnt) => setNama(evnt.target.value) } value={nama} placeholder="Nama" />
               </div>
             </div>
 
@@ -116,8 +116,8 @@ console.log(file)
                     <span class="fs-6 mt-2">perempuan</span>
                 </label> 
             </div>
-
-            <a href="/home"><input type="submit" class="btn" value="Sign  Up" /></a>
+            <a href="/login" className="btn d-flex justify-content-center align-items-center">Sign Up</a>
+            {/* <button  class="btn text-white" value="Sign  Up" onClick={() => window.location.replace("/login")} >Sign up</button> */}
           </form>
         </div>
       </div>
