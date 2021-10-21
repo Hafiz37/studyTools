@@ -1,8 +1,7 @@
 
 /* <==== Hero ====> */
-#hero {
+#banner {
 	width: 100%;
-	height: 680px;
 	background: linear-gradient(292.45deg, #7827e6 33.61%, rgba(220, 199, 248, 0.96) 105.2%);
 }
 
@@ -33,7 +32,7 @@
 }
 
 /* tombol get started dan sign up */
-#hero .btn-get-started, #hero .btn-sign-up {
+#banner .btn-get-started, #banner .btn-sign-up {
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -47,7 +46,7 @@
 }
   
 /* membedakan button signup */
-#hero .btn-sign-up{
+#banner .btn-sign-up{
 	padding: 10px 40px ;
 	color: #fff;
 	background:none;
@@ -55,7 +54,7 @@
 }
   
 /* button get started dan signup saat hoover */
-#hero .btn-get-started:hover, #hero .btn-sign-up:hover {
+#banner .btn-get-started:hover, #banner .btn-sign-up:hover {
 	background: #151d36;
 	color: #fff;
 }
@@ -98,7 +97,7 @@
 }
 	
 /* membuat animasi */
-#hero .animasi {
+#banner .animasi {
 	animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 

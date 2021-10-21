@@ -32,18 +32,15 @@ import Leaderboard from "../../komponen/leaderbord/leaderboard"
 function LandingPage() {
   return (
     <div>
-
-
-
       {/* <!-- HERO --> */}
-      <section id="hero" class="d-flex align-items-center">
+      <section id="banner" class="d-flex align-items-center pb-5 pt-2">
         <div class="container">
           <img class="logo" src={logoBiru} alt="Study Tools" width="136px" />
           <div class="row">
             <div class="h1h2 col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
 
-              <h1>Praktek lebih lengkap di rumah</h1>
-              <h2>Asah skillmu dalam praktikum online
+              <h1 className="display-4 text-light fw-bold">Praktek lebih lengkap di rumah</h1>
+              <h2 className="fs-4 text-light">Asah skillmu dalam praktikum online
                 dan bergabunglah dalam forum diskusi kami</h2>
               <div class="d-flex justify-content-center justify-content-lg-start">
                 <div class="getStarted"><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
@@ -51,7 +48,7 @@ function LandingPage() {
               </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-              <div class="logIn">
+              <div class="logIn text-end">
                 {/* <!-- <h3>Log In ></h3> --> */}
                 <a href="/login" class="button btn-get-started scrollto ">Log In</a>
               </div>
@@ -201,60 +198,60 @@ function LandingPage() {
       {/* our team masih belum bisa sukses */}
 
       <section id="ourTeam">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="text-center fw-bold fs-2">Our Team</h1> <br/>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="perOrang mt-0 col-xl-4 d-flex align-items-center justify-content-center">
-          <div class="cardd d-flex flex-column">
-            <img src={ppHafiz} class="card-img-top rounded-circle" alt=" "/>
-            <div class="card-body">
-              <h3 class="card-text text-center mb-3 fs-5">Muhammad Hafiz Falah</h3>
-              <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
-                <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
-                <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="text-center fw-bold fs-2">Our Team</h1> <br />
+            </div>
+          </div>
+          <div class="row ">
+            <div class="perOrang mt-0 col-xl-4 d-flex align-items-center justify-content-center">
+              <div class="cardd d-flex flex-column">
+                <img src={ppHafiz} class="card-img-top rounded-circle" alt=" " />
+                <div class="card-body">
+                  <h3 class="card-text text-center mb-3 fs-5">Muhammad Hafiz Falah</h3>
+                  <div class="sosmed d-flex justify-content-center">
+                    {/* <!-- ig --> */}
+                    <a href="/"><i class="bi bi-instagram"></i></a>
+                    {/* <!-- wa --> */}
+                    <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
+              <div class="cardd d-flex flex-column">
+                <img src={ppDayinta} class="card-img-top rounded-circle" alt="" />
+                <div class="card-body">
+                  <h3 class="card-text text-center mb-3 fs-5">Dayinta Ayu Faj'rin</h3>
+                  <div class="sosmed d-flex justify-content-center">
+                    {/* <!-- ig --> */}
+                    <a href="/"><i class="bi bi-instagram"></i></a>
+                    {/* <!-- wa --> */}
+                    <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
+              <div class="cardd d-flex flex-column">
+                <img src={ppRahmanda} class="card-img-top rounded-circle" alt=" " />
+                <div class="card-body">
+                  <h3 class="card-text text-center mb-3 fs-5">Rahmanda Dwi Pandega</h3>
+                  <div class="sosmed d-flex justify-content-center">
+                    {/* <!-- ig --> */}
+                    <a href="/"><i class="bi bi-instagram"></i></a>
+                    {/* <!-- wa --> */}
+                    <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
-          <div class="cardd d-flex flex-column">
-            <img src={ppDayinta} class="card-img-top rounded-circle" alt=""/>
-            <div class="card-body">
-              <h3 class="card-text text-center mb-3 fs-5">Dayinta Ayu Faj'rin</h3>
-              <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
-                <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
-                <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="perOrang col-xl-4 d-flex align-items-center justify-content-center">
-          <div class="cardd d-flex flex-column">
-            <img src={ppRahmanda} class="card-img-top rounded-circle" alt=" "/>
-            <div class="card-body">
-              <h3 class="card-text text-center mb-3 fs-5">Rahmanda Dwi Pandega</h3>
-              <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
-                <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
-                <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {/* </div>
+        {/* </div>
   </section> */}
-  </section>
+      </section>
 
 
 
@@ -285,8 +282,8 @@ function LandingPage() {
 
 
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default LandingPage
