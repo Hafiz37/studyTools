@@ -146,7 +146,7 @@ function ForumUtama() {
             < Leaderboard />
             <div className="mt-4 d-flex flex-column flex-md-row flex-xl-column align-items-center justify-content-md-between align-items-xl-center">
               <a href="/forum/TanyaPertanyaan"><button className="btn-tanyaYuk btn btn-primary rounded-pill fw-bold mb-2 mb-md-0 mb-xl-2">Tanya Yuk</button></a>
-              <button className="btn btn-outline-dark rounded-pill fw-bold">Komentari Study Tools Dong</button>
+              <a target="_blank" href="https://forms.gle/4YVyAXGGKyjQLSWJ6"><button className="btn btn-outline-dark rounded-pill fw-bold">Komentari Study Tools Dong</button></a>
             </div>
           </div>
           {/* <!-- ======= selesai Leaderboard ======= --> */}
