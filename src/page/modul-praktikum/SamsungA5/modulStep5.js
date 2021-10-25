@@ -82,9 +82,9 @@ function ModelStep5() {
                     <img src={hpbelumdirakit} id="device" width="100%" />
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
-                    <img src={komponen5} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen9} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen2} class="macamKomponen gambar drag-drop" />
+                    <img src={komponen5} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="RCV(ear speaker)" />
+                    <img src={komponen9} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="front cam(kamera depan)" />
+                    <img src={komponen2} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="proximity(sensor cahaya)" />
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-2 btn-control">
