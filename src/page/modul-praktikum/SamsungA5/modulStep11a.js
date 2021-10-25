@@ -28,6 +28,16 @@ function ModelStep11a() {
     e.preventDefault();
     if (pasang == 1) {
       window.location.replace("ModulA5step11b");
+
+      //penambahan poin
+      let myPoint = 0;
+      myPoint = parseInt(localStorage.getItem("PoinSamsungA5")) + 20;
+      localStorage.setItem("PoinSamsungA5", myPoint);
+      if (myPoint > 0) {
+        alert("Yeyyy... Kamu mendapatkan 20 Point, Total poin kamu " + myPoint + " Point");
+      }
+      
+
     } else {
       alert("Komponen Belum Tersambung Dengan Benar");
     }
