@@ -212,12 +212,12 @@ function ModelStep19() {
                     <img src={hpbelumdirakit} id="device" width="100%" />
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
-                    <img src={komponena} class="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih" />
-                    <img src={komponen7} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen11} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen8} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen12} class="macamKomponen gambar drag-drop" />
-                    <img src={komponen21} class="macamKomponen gambar drag-drop" />
+                    <img src={komponena} class="macamKomponen gambar drag-drop" id="gambarterpilih" status="terpilih"  data-bs-toggle="tooltip"  data-bs-placement="top" title="earjact" />
+                    <img src={komponen7} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="sim card 1" />
+                    <img src={komponen11} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="battery" />
+                    <img src={komponen8} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip"  data-bs-placement="top" title="sim card2 & sd card" />
+                    <img src={komponen12} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip"  data-bs-placement="top" title="nfc/mst ant" />
+                    <img src={komponen21} class="macamKomponen gambar drag-drop" data-bs-toggle="tooltip"  data-bs-placement="top" title="kesing" />
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-2 btn-control">
