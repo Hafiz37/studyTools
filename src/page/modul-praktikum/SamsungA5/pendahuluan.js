@@ -231,7 +231,8 @@ return (
                   <div className="dropzone border rounded-25 d-flex  align-items-center justify-content-center ">
                     {/* <img src={hpbelumdirakit} id="device" width="100%" /> */}
                     {/* img diganti iframe */}
-                    <iframe width="560" height="315" id="device" src="https://www.youtube.com/embed/t06_rLWAZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {/* <iframe width="560" height="315" id="device" src="https://www.youtube.com/embed/t06_rLWAZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                    <iframe width="560" height="315" id='device' src="https://www.youtube.com/embed/x1INF_GfHGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div className="my-2 border-top border-bottom border-dark border-2 p-2 text-center">
                     {/* <img src={komponen3} className="macamKomponen gambar drag-drop" data-bs-toggle="tooltip" data-bs-placement="top" title="button home-button back" />
