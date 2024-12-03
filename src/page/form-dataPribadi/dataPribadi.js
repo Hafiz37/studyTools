@@ -11,7 +11,7 @@ import {useState, useEffect, useRef} from 'react'
 function DataPribadi() {
 
 
-
+ 
   // const foto nama tanggal lahir, kelamin
   const [foto, setFoto] = useState()
   const [nama, setNama] = useState()
