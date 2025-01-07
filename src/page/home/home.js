@@ -2,6 +2,7 @@ import React from 'react'
 import "./home.css"
 import Leaderboard from "../../komponen/leaderbord/leaderboard"
 
+
 // gambar carausel
 import carausel1 from "./carausel/carausel-1.jpg"
 import carausel2 from "./carausel/carousel-2.jpg"
@@ -187,7 +188,7 @@ function Home() {
 
       {/* our team masih belum bisa sukses */}
 
-      <section id="ourTeam">
+      {/* <section id="ourTeam">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -201,9 +202,7 @@ function Home() {
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Muhammad Hafiz Falah</h3>
               <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
                 <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
                 <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
@@ -215,9 +214,7 @@ function Home() {
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Dayinta Ayu Faj'rin</h3>
               <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
                 <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
                 <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
@@ -229,9 +226,7 @@ function Home() {
             <div class="card-body">
               <h3 class="card-text text-center mb-3 fs-5">Rahmanda Dwi Pandega</h3>
               <div class="sosmed d-flex justify-content-center">
-                {/* <!-- ig --> */}
                 <a href="/"><i class="bi bi-instagram"></i></a>
-                {/* <!-- wa --> */}
                 <a href="/" class="ms-5"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
@@ -239,9 +234,7 @@ function Home() {
         </div>
       </div>
     </div>
-    {/* </div>
   </section> */}
-  </section>
 
 
 
